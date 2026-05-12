@@ -1,0 +1,151 @@
+.principalmessage {
+  width: 100%;
+  padding: 60px 0;
+  background: #f8f9fa;
+}
+
+/* WRAPPER */
+.principalmessage-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+/* LEFT SIDE */
+.principalmessage-left {
+  flex: 1;
+  text-align: center;
+}
+
+.principalmessage-image {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+/* NAME BOX */
+.principalmessage-namebox {
+  margin-top: 20px;
+}
+
+.principalmessage-namebox h4 {
+  font-size: 24px;
+  color: #0d3b66;
+  margin-bottom: 6px;
+  font-weight: 700;
+}
+
+.principalmessage-namebox p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* RIGHT SIDE */
+.principalmessage-right {
+  flex: 1.5;
+  text-align: left;
+}
+
+.principalmessage-heading {
+  font-size: 42px;
+  color: #0d3b66;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+.principalmessage-text {
+  font-size: 17px;
+  line-height: 1.9;
+  color: #444;
+  margin-bottom: 22px;
+}
+/* box points  */
+/* BOX POINTS */
+.box-points {
+  width: 100%;
+  background: #fff;
+  padding: 45px;
+  margin-top: 60px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+/* HEADING */
+.box-points-heading {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 700;
+  color: #0d3b66;
+  margin-bottom: 35px;
+}
+
+/* LIST */
+.box-points-list {
+  margin: 0;
+  padding-left: 20px;
+}
+
+/* POINTS */
+.box-points-list li {
+  font-size: 17px;
+  line-height: 1.9;
+  color: #444;
+  margin-bottom: 18px;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+
+  .principalmessage-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .principalmessage-right {
+    text-align: center;
+  }
+
+  .principalmessage-heading {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .principalmessage {
+    padding: 60px 0;
+  }
+
+  .principalmessage-heading {
+    font-size: 28px;
+  }
+
+  .principalmessage-text {
+    font-size: 15px;
+  }
+
+  .principalmessage-namebox h4 {
+    font-size: 22px;
+  }
+
+  .principalmessage-namebox p {
+    font-size: 14px;
+  }
+  /*  */
+  .box-points {
+    padding: 25px;
+    margin-top: 40px;
+  }
+
+  .box-points-heading {
+    font-size: 26px;
+    margin-bottom: 25px;
+  }
+
+  .box-points-list li {
+    font-size: 15px;
+  }
+}
