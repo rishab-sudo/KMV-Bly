@@ -13,7 +13,7 @@ import {
 import HomeGallery from '../components/HomeGallery';
 
 const Home = () => {
-      const [showMore, setShowMore] = useState(false);
+     
 
   return (
     <div>
