@@ -1,0 +1,276 @@
+.contact {
+  width: 100%;
+  background: #f5f7fb;
+  padding-bottom: 80px;
+}
+
+/* HERO SECTION */
+.contact-hero {
+  width: 100%;
+  height: 420px;
+  background: url("../assets/kmv-banner1.jpeg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 80px;
+}
+
+.contact-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+}
+
+.contact-hero-content {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  text-align: center;
+}
+
+.contact-hero-heading {
+  font-size: 72px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.contact-hero-text {
+  font-size: 20px;
+  color: #f1f1f1;
+}
+
+/* TOP BOX */
+.contact-box {
+  width: 100%;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  overflow: hidden;
+  margin-bottom: 70px;
+}
+
+/* COLUMN */
+.contact-box-col {
+  padding: 45px 35px;
+
+  display: flex;
+  align-items: flex-start;
+  gap: 22px;
+}
+
+.contact-border {
+  border-right: 1px solid #e3e3e3;
+}
+
+/* ICON */
+.contact-icon {
+  width: 70px;
+  height: 70px;
+  background: #0d3b66;
+  color: #fff;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 28px;
+  flex-shrink: 0;
+}
+
+.contact-box-col h3 {
+  font-size: 28px;
+  color: #0d3b66;
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.contact-box-col p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.8;
+  margin: 0;
+  text-align: left;
+}
+
+/* FORM CONTAINER */
+.contact-form-container {
+  width: 100%;
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+
+  display: flex;
+  align-items: stretch;
+
+  margin-bottom: 70px;
+}
+
+/* LEFT */
+.contact-form-left {
+  flex: 1;
+}
+
+.contact-form-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* RIGHT */
+.contact-form-right {
+  flex: 1;
+  padding: 55px;
+}
+
+.contact-form-heading {
+  font-size: 46px;
+  color: #0d3b66;
+  margin-bottom: 35px;
+  font-weight: 700;
+}
+
+/* LABEL */
+.contact-form-label {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  color: #0d3b66;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+/* INPUT */
+.contact-form-input,
+.contact-form-textarea {
+  width: 100%;
+  padding: 16px 18px;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+  margin-bottom: 22px;
+  font-size: 15px;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.contact-form-input:focus,
+.contact-form-textarea:focus {
+  border-color: #0d3b66;
+}
+
+.contact-form-textarea {
+  height: 150px;
+  resize: none;
+}
+
+/* BUTTON */
+.contact-form-btn {
+  padding: 15px 38px;
+  border: none;
+  background: #0d3b66;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.contact-form-btn:hover {
+  background: #082744;
+}
+
+/* MAP */
+.contact-map {
+  width: 100%;
+  height: 500px;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+}
+
+.contact-map-frame {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+
+  .contact-box {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-border {
+    border-right: none;
+    border-bottom: 1px solid #e3e3e3;
+  }
+
+  .contact-form-container {
+    flex-direction: column;
+  }
+
+  .contact-form-right {
+    padding: 35px;
+  }
+
+  .contact-hero-heading {
+    font-size: 54px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .contact {
+    padding-bottom: 60px;
+  }
+
+  .contact-hero {
+    height: 300px;
+    margin-bottom: 60px;
+  }
+
+  .contact-hero-heading {
+    font-size: 40px;
+  }
+
+  .contact-hero-text {
+    font-size: 16px;
+  }
+
+  .contact-box-col {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .contact-box-col p {
+    text-align: center;
+  }
+
+  .contact-form-heading {
+    font-size: 34px;
+  }
+
+  .contact-form-right {
+    padding: 25px;
+  }
+
+  .contact-map {
+    height: 350px;
+  }
+
+  .contact-form-btn {
+    width: 100%;
+  }
+}
