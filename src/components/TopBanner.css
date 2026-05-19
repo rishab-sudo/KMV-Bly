@@ -16,7 +16,7 @@
 .topbanner-overlay {
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.45);
+  background: rgba(0, 0, 0, 0.65);
 
   display: flex;
   flex-direction: column;

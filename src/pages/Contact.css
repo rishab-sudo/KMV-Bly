@@ -36,7 +36,7 @@ margin-top: 3.5%;
 .contact-icon {
   width: 60px;
   height: 60px;
-  background: #0d3b66;
+  background: #4B0A0A;
   color: #fff;
   border-radius: 50%;
 
@@ -50,9 +50,9 @@ margin-top: 3.5%;
 
 .contact-box-col h3 {
   font-size: 28px;
-  color: #0d3b66;
+  color: #4B0A0A;
   margin-bottom: 12px;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .contact-box-col p {
@@ -95,10 +95,10 @@ margin-top: 3.5%;
 }
 
 .contact-form-heading {
-  font-size: 46px;
-  color: #0d3b66;
+  font-size: 38px;
+  color: #4B0A0A;
   margin-bottom: 35px;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 /* LABEL */
@@ -106,7 +106,7 @@ margin-top: 3.5%;
   display: block;
   font-size: 16px;
   font-weight: 600;
-  color: #0d3b66;
+  color: #4B0A0A;
   margin-bottom: 10px;
   text-align: left;
 }
@@ -126,7 +126,7 @@ margin-top: 3.5%;
 
 .contact-form-input:focus,
 .contact-form-textarea:focus {
-  border-color: #0d3b66;
+  border-color: #4B0A0A;
 }
 
 .contact-form-textarea {
@@ -138,7 +138,7 @@ margin-top: 3.5%;
 .contact-form-btn {
   padding: 15px 38px;
   border: none;
-  background: #0d3b66;
+  background: #4B0A0A;
   color: #fff;
   font-size: 16px;
   font-weight: 600;
