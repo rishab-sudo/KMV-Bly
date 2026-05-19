@@ -1,0 +1,73 @@
+/* TopBanner.css */
+
+.topbanner {
+  width: 100%;
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.topbanner-overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.45);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+}
+
+.topbanner-title {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+}
+
+.topbanner-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+}
+
+.topbanner-breadcrumb a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.topbanner-breadcrumb a:hover {
+  color: #f4c542;
+}
+
+.topbanner-breadcrumb span,
+.topbanner-breadcrumb p {
+  margin: 0;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .topbanner {
+    height: 280px;
+  }
+
+  .topbanner-title {
+    font-size: 34px;
+  }
+
+  .topbanner-breadcrumb {
+    font-size: 16px;
+  }
+}

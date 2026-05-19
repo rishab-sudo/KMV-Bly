@@ -4,7 +4,7 @@ import {
   FaPhoneAlt,
   FaEnvelope
 } from "react-icons/fa";
-
+import TopBanner from "../components/TopBanner";
 import "./Contact.css";
 
 const Contact = () => {
@@ -12,27 +12,11 @@ const Contact = () => {
     <section className="contact">
 
       {/* HERO SECTION */}
-      <div className="contact-hero">
-
-        <div className="contact-hero-overlay"></div>
-
-        <div className="container">
-
-          <div className="contact-hero-content">
-
-            <h1 className="contact-hero-heading">
-              Contact Us
-            </h1>
-
-            <p className="contact-hero-text">
-              Home / Contact Us
-            </p>
-
-          </div>
-
-        </div>
-
-      </div>
+    <TopBanner
+  title="Contact"
+  currentPage="Contact"
+  backgroundImage="/images/kmv-banner1.jpeg"
+/>
 
       <div className="container">
 

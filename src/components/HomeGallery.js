@@ -1,82 +1,92 @@
 import React from "react";
-import Marquee from "react-fast-marquee";
+import Slider from "react-slick";
 import "./HomeGallery.css";
 
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 const HomeGallery = () => {
+
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 800,
+    autoplay: true,
+    autoplaySpeed: 2500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: false,
+    pauseOnHover: true,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
+
+  const galleryImages = [
+    require("../assets/kmv-banner1.jpeg"),
+    require("../assets/kmv-banner2.jpeg"),
+    require("../assets/kmv-banner3.jpeg"),
+    require("../assets/kmv-banner4.jpeg"),
+    require("../assets/kmv-banner5.jpeg"),
+    require("../assets/kmv-banner6.jpeg"),
+  ];
+
   return (
     <section className="home-gallery">
+
       <div className="container">
 
         {/* HEADING */}
         <div className="home-gallery-top">
+
           <h2 className="home-gallery-heading">
             Our Gallery
           </h2>
 
           <p className="home-gallery-text">
-            Explore memorable moments, campus life, academic
-            activities and events at KMV College.
+            Explore memorable moments, campus life,
+            academic activities and events at KMV College.
           </p>
+
         </div>
 
         {/* SLIDER */}
-        <Marquee
-          speed={50}
-          pauseOnHover={true}
-          gradient={false}
-        >
+        <Slider {...settings}>
 
-          <div className="home-gallery-item">
-            <img
-              src={require("../assets/kmv-banner1.jpeg")}
-              alt="gallery"
-              className="home-gallery-image"
-            />
-          </div>
+          {galleryImages.map((image, index) => (
+            <div
+              className="home-gallery-slide"
+              key={index}
+            >
 
-          <div className="home-gallery-item">
-            <img
-            src={require("../assets/kmv-banner2.jpeg")}
-              alt="gallery"
-              className="home-gallery-image"
-            />
-          </div>
+              <div className="home-gallery-item">
 
-          <div className="home-gallery-item">
-            <img
-              src={require("../assets/kmv-banner3.jpeg")}
-              alt="gallery"
-              className="home-gallery-image"
-            />
-          </div>
+                <img
+                  src={image}
+                  alt={`gallery-${index}`}
+                  className="home-gallery-image"
+                />
 
-          <div className="home-gallery-item">
-            <img
-             src={require("../assets/kmv-banner4.jpeg")}
-              alt="gallery"
-              className="home-gallery-image"
-            />
-          </div>
+              </div>
 
-          <div className="home-gallery-item">
-            <img
-              src={require("../assets/kmv-banner5.jpeg")}
-              alt="gallery"
-              className="home-gallery-image"
-            />
-          </div>
+            </div>
+          ))}
 
-          <div className="home-gallery-item">
-            <img
-              src={require("../assets/kmv-banner6.jpeg")}
-              alt="gallery"
-              className="home-gallery-image"
-            />
-          </div>
-
-        </Marquee>
+        </Slider>
 
       </div>
+
     </section>
   );
 };

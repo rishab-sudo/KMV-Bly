@@ -1,146 +1,207 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
-import { FaChevronDown } from "react-icons/fa";
+import React, { useState } from "react";
+import { Container } from "react-bootstrap";
+import {
+  FaBars,
+  FaTimes,
+  FaChevronDown,
+} from "react-icons/fa";
 import "./Navbar.css";
 
 const Navbar = () => {
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+
   return (
-    <nav className="navbar-section">
-      <div className="container">
-        <div className="navbar-wrapper">
+    <>
+      {/* TOP HEADER */}
+      <header className="navbar-header">
+        <Container className="navbar-container">
+          <div className="navbar-wrapper">
 
-          <ul className="navbar-links">
+            {/* LEFT SIDE */}
+            <div className="navbar-left">
+              <img
+                src={require("../assets/kmv-logo.png")}
+                alt="College Logo"
+                className="navbar-logo"
+              />
 
-            {/* HOME */}
-            <li>
-              <NavLink
-                to="/"
-                className={({ isActive }) =>
-                  isActive ? "nav-link active-link" : "nav-link"
-                }
-              >
-                Home
-              </NavLink>
-            </li>
+              <div className="navbar-info">
+                <h2 className="navbar-college-name">
+                  KMV College
+                </h2>
 
-            {/* ABOUT DROPDOWN */}
-            <li className="dropdown">
+                <p className="navbar-tagline">
+                  Excellence in Education
+                </p>
+              </div>
+            </div>
 
-              <div className="dropdown-title nav-link">
-                About <FaChevronDown className="dropdown-icon" />
+            {/* RIGHT SIDE */}
+            <div className="navbar-right">
+
+              <div className="navbar-contact">
+                <span className="navbar-label">
+                  Email :
+                </span>
+
+                <span>info@kmvcollege.edu</span>
               </div>
 
-              <ul className="dropdown-menu">
+              <div className="navbar-contact">
+                <span className="navbar-label">
+                  Phone :
+                </span>
 
-                <li>
-                  <NavLink to="/about" className="dropdown-link">
-                    About College
-                  </NavLink>
-                </li>
-
-                <li>
-                  <NavLink
-                    to="/principal-message"
-                    className="dropdown-link"
-                  >
-                    Principal Message
-                  </NavLink>
-                </li>
-
-                <li>
-                  <NavLink
-                    to="/management"
-                    className="dropdown-link"
-                  >
-                    Management
-                  </NavLink>
-                </li>
-
-              </ul>
-
-            </li>
-
-            {/* COURSES */}
-            <li>
-              <NavLink
-                to="/courses"
-                className={({ isActive }) =>
-                  isActive ? "nav-link active-link" : "nav-link"
-                }
-              >
-                Courses
-              </NavLink>
-            </li>
-
-            {/* INFO DROPDOWN */}
-            <li className="dropdown">
-
-              <div className="dropdown-title nav-link">
-                Info <FaChevronDown className="dropdown-icon" />
+                <span>+91 9876543210</span>
               </div>
 
-              <ul className="dropdown-menu">
+              {/* HAMBURGER */}
+              <div
+                className="navbar-hamburger"
+                onClick={() =>
+                  setSidebarOpen(true)
+                }
+              >
+                <FaBars />
+              </div>
+            </div>
 
-                <li>
-                  <NavLink
-                    to="/admission"
-                    className="dropdown-link"
-                  >
+          </div>
+        </Container>
+      </header>
+
+      {/* DESKTOP NAVBAR */}
+      <div className="navbar-menu-wrapper">
+        <Container>
+          <ul className="navbar-menu">
+
+            <li>
+              <a href="/">Home</a>
+            </li>
+
+            <li>
+              <a href="/about">About</a>
+            </li>
+
+            {/* DROPDOWN */}
+            <li
+              className="navbar-dropdown"
+              onMouseEnter={() =>
+                setDropdownOpen(true)
+              }
+              onMouseLeave={() =>
+                setDropdownOpen(false)
+              }
+            >
+              <a href="/">
+                Info <FaChevronDown />
+              </a>
+
+              {dropdownOpen && (
+                <div className="navbar-dropdown-menu">
+                  <a href="/admission">
                     Admission
-                  </NavLink>
-                </li>
+                  </a>
 
-                <li>
-                  <NavLink
-                    to="/fees"
-                    className="dropdown-link"
-                  >
-                    Fees Structure
-                  </NavLink>
-                </li>
+                  <a href="/faculty">
+                    Faculty
+                  </a>
 
-                <li>
-                  <NavLink
-                    to="/rules"
-                    className="dropdown-link"
-                  >
-                    Rules & Regulations
-                  </NavLink>
-                </li>
-
-              </ul>
-
+                  <a href="/events">
+                    Events
+                  </a>
+                </div>
+              )}
             </li>
 
-            {/* GALLERY */}
             <li>
-              <NavLink
-                to="/gallery"
-                className={({ isActive }) =>
-                  isActive ? "nav-link active-link" : "nav-link"
-                }
-              >
-                Gallery
-              </NavLink>
+              <a href="/courses">Courses</a>
             </li>
 
-            {/* CONTACT */}
             <li>
-              <NavLink
-                to="/contact"
-                className={({ isActive }) =>
-                  isActive ? "nav-link active-link" : "nav-link"
-                }
-              >
-                Contact
-              </NavLink>
+              <a href="/gallery">Gallery</a>
+            </li>
+
+            <li>
+              <a href="/contact">Contact</a>
             </li>
 
           </ul>
-
-        </div>
+        </Container>
       </div>
-    </nav>
+
+      {/* MOBILE SIDEBAR */}
+      <div
+        className={`navbar-sidebar ${
+          sidebarOpen ? "active" : ""
+        }`}
+      >
+
+        <div className="navbar-sidebar-top">
+          <FaTimes
+            className="navbar-close"
+            onClick={() =>
+              setSidebarOpen(false)
+            }
+          />
+        </div>
+
+        <ul className="navbar-sidebar-links">
+
+          <li>
+            <a href="/">Home</a>
+          </li>
+
+          <li>
+            <a href="/about">About</a>
+          </li>
+
+          <li className="mobile-dropdown">
+            <details>
+              <summary>Info</summary>
+
+              <div className="mobile-submenu">
+                <a href="/admission">
+                  Admission
+                </a>
+
+                <a href="/faculty">
+                  Faculty
+                </a>
+
+                <a href="/events">
+                  Events
+                </a>
+              </div>
+            </details>
+          </li>
+
+          <li>
+            <a href="/courses">Courses</a>
+          </li>
+
+          <li>
+            <a href="/gallery">Gallery</a>
+          </li>
+
+          <li>
+            <a href="/contact">Contact</a>
+          </li>
+
+        </ul>
+      </div>
+
+      {/* OVERLAY */}
+      {sidebarOpen && (
+        <div
+          className="navbar-overlay"
+          onClick={() =>
+            setSidebarOpen(false)
+          }
+        ></div>
+      )}
+    </>
   );
 };
 

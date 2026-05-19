@@ -1,6 +1,8 @@
 .homecards {
   width: 100%;
-  padding: 70px 0;
+  padding: 45px 0;
+  /* margin-top: 2rem; */
+
 }
 
 /* WRAPPER */
@@ -8,7 +10,7 @@
   width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  background: #fff;
+  background-color: #4B0A0A;
   border-radius: 12px;
   box-shadow: 0 8px 25px rgba(0,0,0,0.08);
   overflow: hidden;
@@ -34,7 +36,7 @@
 /* ICON */
 .homecards-icon {
   font-size: 55px;
-  color: #0d3b66;
+  color: #fbfbfb;
   margin-bottom: 25px;
 
   display: flex;
@@ -46,7 +48,7 @@
 .homecards-heading {
   font-size: 24px;
   font-weight: 700;
-  color: #0d3b66;
+  color: #fbfbfb;
   margin-bottom: 18px;
 }
 
@@ -54,7 +56,7 @@
 .homecards-description {
   font-size: 16px;
   line-height: 1.8;
-  color: #555;
+  color: #fbfbfb;
   margin: 0;
 }
 

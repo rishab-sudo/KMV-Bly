@@ -25,7 +25,7 @@ const Footer = () => {
           <div className="footer-col">
 
             <img
-              src={""}
+              src={require("../assets/kmv-logo.png")}
               alt="logo"
               className="footer-logo"
             />

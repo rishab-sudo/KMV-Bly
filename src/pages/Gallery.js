@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import TopBanner from "../components/TopBanner"
 import {
   FaChevronLeft,
   FaChevronRight,
@@ -76,27 +77,11 @@ const Gallery = () => {
     <section className="gallery">
 
       {/* HERO */}
-      <div className="gallery-hero">
-
-        <div className="gallery-overlay"></div>
-
-        <div className="container">
-
-          <div className="gallery-hero-content">
-
-            <h1 className="gallery-hero-heading">
-              Gallery
-            </h1>
-
-            <p className="gallery-hero-text">
-              Home / Gallery
-            </p>
-
-          </div>
-
-        </div>
-
-      </div>
+    <TopBanner
+  title="Gallery"
+  currentPage="Gallery"
+  backgroundImage="/images/kmv-banner1.jpeg"
+/>
 
       <div className="container">
 
