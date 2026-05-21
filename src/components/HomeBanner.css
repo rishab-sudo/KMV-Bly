@@ -21,33 +21,102 @@
 .homebanner-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.45);
+  background: rgba(0, 0, 0, 0.55);
 }
 
-/* CENTER CONTENT */
+/* LEFT CONTENT */
 .homebanner-content {
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+  left: 8%;
+  transform: translateY(-50%);
   z-index: 10;
-  width: 90%;
+  max-width: 600px;
   color: #fff;
+  text-align: left;
 }
 
+/* SUBTITLE */
+.homebanner-subtitle {
+  display: inline-block;
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+  color: #F3D79B;
+  font-weight: 600;
+}
+
+/* HEADING */
 .homebanner-content h1 {
-  font-size: 65px;
-  font-weight: 700;
-  margin-bottom: 20px;
+  font-size: 38px;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 25px;
   text-transform: uppercase;
 }
 
+/* PARAGRAPH */
 .homebanner-content p {
-  font-size: 20px;
-  max-width: 800px;
-  margin: auto;
-  line-height: 1.7;
+  font-size: 19px;
+  line-height: 1.8;
+  margin-bottom: 35px;
+  max-width: 620px;
+}
+
+/* BUTTON WRAPPER */
+.homebanner-buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* COMMON BUTTON */
+.banner-btn {
+  position: relative;
+  overflow: hidden;
+  padding: 11px 25px;
+background-color: #4B0A0A !important;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  z-index: 1;
+  transition: 0.4s ease;
+  border-radius: 15px;
+}
+
+/* HOVER FILL EFFECT */
+.banner-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: #F3D79B;
+  z-index: -1;
+  transition: 0.5s ease;
+}
+
+.banner-btn:hover::before {
+  left: 0;
+}
+
+.banner-btn:hover {
+  color: #4B0A0A;
+  border-color: #F3D79B;
+}
+
+/* FIRST BUTTON */
+.banner-btn-fill {
+  background: transparent;
+}
+
+/* SECOND BUTTON */
+.banner-btn-outline {
+  background: transparent;
 }
 
 /* CAROUSEL ARROWS */
@@ -59,7 +128,10 @@
   background-size: 50%;
 }
 
-/* RESPONSIVE */
+/* =========================
+   RESPONSIVE
+========================= */
+
 @media (max-width: 992px) {
 
   .homebanner-image-wrapper,
@@ -67,8 +139,13 @@
     height: 75vh;
   }
 
+  .homebanner-content {
+    left: 6%;
+    width: 88%;
+  }
+
   .homebanner-content h1 {
-    font-size: 42px;
+    font-size: 48px;
   }
 
   .homebanner-content p {
@@ -83,12 +160,33 @@
     height: 65vh;
   }
 
+  .homebanner-content {
+    left: 5%;
+    width: 90%;
+  }
+
+  .homebanner-subtitle {
+    font-size: 14px;
+  }
+
   .homebanner-content h1 {
-    font-size: 30px;
+    font-size: 32px;
+    margin-bottom: 18px;
   }
 
   .homebanner-content p {
     font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+  }
+
+  .homebanner-buttons {
+    gap: 14px;
+  }
+
+  .banner-btn {
+    padding: 12px 24px;
+    font-size: 14px;
   }
 
   .carousel-control-prev-icon,

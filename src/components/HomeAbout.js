@@ -1,75 +1,68 @@
 import React from "react";
 import "./HomeAbout.css";
 
+import aboutImage from "../assets/kmv-banner1.jpeg";
+
 const HomeAbout = () => {
   return (
-    <section className="homeabout">
+    <section className="homeabout g-0">
 
-      {/* OVERLAY */}
-      <div className="homeabout-overlay"></div>
+      <div className="container-fluid g-0">
 
-      {/* BACKGROUND IMAGE */}
-      <div
-        className="homeabout-bg"
-        style={{
-          backgroundImage: `url(${require("../assets/kmv-banner1.jpeg")})`,
-        }}
-      ></div>
+        <div className="homeabout-wrapper">
 
-      <div className="container">
+          {/* LEFT IMAGE */}
+          <div className="homeabout-image-section">
+            <img
+              src={aboutImage}
+              alt="KMV College"
+              className="homeabout-image"
+            />
+          </div>
 
-        {/* CONTENT */}
-        <div className="homeabout-content">
+          {/* RIGHT CONTENT */}
+          <div className="homeabout-content">
 
-          <h2 className="homeabout-heading">
-            About KMV College
-          </h2>
+            <span className="homeabout-subtitle">
+              About KMV College
+            </span>
 
-          <p className="homeabout-description">
-            KMV College is committed to providing quality education,
-            academic excellence, and holistic development for students.
-            Our institution focuses on innovation, discipline, leadership,
-            and career-oriented learning to prepare students for a bright
-            future. With experienced faculty members and modern
-            infrastructure, we ensure an inspiring educational environment
-            for every learner.
-          </p>
+            <h2 className="homeabout-heading">
+              Empowering Students Through
+              Quality Education & Innovation
+            </h2>
 
-          <p className="homeabout-description">
-            Our college believes in empowering students through
-            knowledge, values, and practical learning experiences.
-            We encourage participation in academics, sports,
-            cultural activities, and research programs to build
-            confidence and leadership qualities among students.
-          </p>
+            <p className="homeabout-description">
+              KMV College is committed to providing quality education,
+              academic excellence, and holistic development for students.
+              Our institution focuses on innovation, discipline,
+              leadership, and career-oriented learning to prepare
+              students for a bright future.
+            </p>
 
-          <p className="homeabout-description">
-            KMV College continuously strives to create an atmosphere
-            where students can achieve their educational goals and
-            contribute positively to society with integrity and
-            excellence.
-          </p>
+            <p className="homeabout-description">
+              With experienced faculty members, modern infrastructure,
+              and student-centered teaching methods, we ensure an
+              inspiring educational environment that encourages growth,
+              confidence, and success.
+            </p>
 
-        </div>
+            <p className="homeabout-description">
+              We believe in empowering students through knowledge,
+              values, and practical learning experiences while promoting
+              academics, sports, cultural activities, and leadership
+              opportunities.
+            </p>
 
-      </div>
+            {/* BUTTON */}
+            <div className="homeabout-btn-wrapper">
+              <a href="/about" className="homeabout-btn">
+                Know More
+              </a>
+            </div>
 
-      {/* BOTTOM BOXES */}
-      <div className="homeabout-box-wrapper">
+          </div>
 
-        <div className="homeabout-box">
-          <h3>Admission Open</h3>
-          <p>Apply now for the upcoming academic session.</p>
-        </div>
-
-        <div className="homeabout-box">
-          <h3>Download Prospectus</h3>
-          <p>Get complete information about courses & facilities.</p>
-        </div>
-
-        <div className="homeabout-box">
-          <h3>Explore Courses</h3>
-          <p>Discover career-oriented undergraduate programs.</p>
         </div>
 
       </div>

@@ -4,7 +4,7 @@
 
 .navbar-header {
   width: 100%;
-  padding: 5px 0;
+  padding: 8px 0;
   background: #4B0A0A;
   border-bottom: 1px solid #ffffff20;
 }
@@ -26,12 +26,12 @@
 .navbar-left {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 18px;
 }
 
 .navbar-logo {
-  width: 80px;
-  height: 80px;
+  width: 90px;
+  height: 90px;
   object-fit: contain;
 }
 
@@ -41,16 +41,19 @@
 }
 
 .navbar-college-name {
-  font-size: 28px;
+  font-size: 34px;
   font-weight: 700;
   margin: 0;
   color: #fff;
+  line-height: 1.2;
 }
 
 .navbar-tagline {
-  margin: 0;
-  font-size: 14px;
-  color: #fff;
+  margin: 6px 0 0;
+  font-size: 15px;
+  color: #F3D79B;
+  letter-spacing: 1px;
+  font-weight: 500;
 }
 
 /* =========================
@@ -60,19 +63,42 @@
 .navbar-right {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 28px;
 }
 
-.navbar-contact {
+.navbar-contact-box {
   display: flex;
   align-items: center;
-  gap: 8px;
-  color: #fff;
-  font-size: 15px;
+  gap: 14px;
 }
 
-.navbar-label {
-  font-weight: 700;
+.navbar-contact-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #F3D79B;
+  color: #4B0A0A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.navbar-contact-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-contact-title {
+  color: #F3D79B;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.navbar-contact-text {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
 }
 
 /* =========================
@@ -93,7 +119,13 @@
 .navbar-menu-wrapper {
   width: 100%;
   background: #F3D79B;
-  padding: 0;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.navbar-menu-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navbar-menu {
@@ -101,8 +133,10 @@
   padding: 0;
   list-style: none;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  /* background-color: aqua; */
+  width: 80%;
 }
 
 .navbar-menu li {
@@ -113,16 +147,42 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  padding: 18px 22px;
+  padding: 20px 18px;
   text-decoration: none;
   color: #4B0A0A;
-  font-weight: 600;
+  font-weight: 700;
   transition: 0.3s;
+  font-size: 15px;
 }
 
 .navbar-menu li a:hover {
   background: #4B0A0A;
   color: #fff;
+}
+
+/* =========================
+   APPLY BUTTON
+========================= */
+
+.navbar-apply-btn-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-apply-btn {
+  background: #4B0A0A;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 28px;
+  border-radius: 50px;
+  font-weight: 700;
+  transition: 0.3s;
+  border: 2px solid #4B0A0A;
+}
+
+.navbar-apply-btn:hover {
+  background: transparent;
+  color: #4B0A0A;
 }
 
 /* =========================
@@ -133,10 +193,12 @@
   position: absolute;
   top: 100%;
   left: 0;
-  background: #F3D79B;
-  min-width: 220px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  background: #fff;
+  min-width: 240px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
   z-index: 999;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .navbar-dropdown-menu a {
@@ -144,10 +206,11 @@
   padding: 14px 18px;
   color: #4B0A0A !important;
   border-bottom: 1px solid #eee;
+  background: #fff !important;
 }
 
 .navbar-dropdown-menu a:hover {
-  background: #4B0A0A;
+  background: #4B0A0A !important;
   color: #fff !important;
 }
 
@@ -178,7 +241,7 @@
 }
 
 .navbar-close {
-  font-size: 26px;
+  font-size: 28px;
   cursor: pointer;
   color: #4B0A0A;
 }
@@ -213,6 +276,15 @@
   padding: 8px 0;
 }
 
+.mobile-apply-btn {
+  background: #4B0A0A;
+  color: #fff !important;
+  text-align: center;
+  border-radius: 8px;
+  margin-top: 15px;
+  padding: 14px !important;
+}
+
 /* =========================
    OVERLAY
 ========================= */
@@ -243,63 +315,82 @@
 
   .navbar-wrapper {
     flex-direction: column;
-    gap: 15px;
     align-items: flex-start;
+    gap: 18px;
   }
 
   .navbar-right {
     width: 100%;
     justify-content: space-between;
-    gap: 15px;
     flex-wrap: wrap;
+    gap: 20px;
   }
 }
 
 @media (max-width: 768px) {
 
   .navbar-logo {
-    width: 65px;
-    height: 65px;
+    width: 70px;
+    height: 70px;
   }
 
   .navbar-college-name {
-    font-size: 22px;
+    font-size: 24px;
   }
 
   .navbar-tagline {
     font-size: 13px;
   }
 
-  .navbar-contact {
-    font-size: 13px;
+  .navbar-contact-box {
+    gap: 10px;
   }
 
-  .navbar-right {
-    align-items: center;
+  .navbar-contact-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 15px;
+  }
+
+  .navbar-contact-title {
+    font-size: 12px;
+  }
+
+  .navbar-contact-text {
+    font-size: 13px;
   }
 }
 
 @media (max-width: 576px) {
 
   .navbar-wrapper {
-    gap: 12px;
+    gap: 15px;
   }
 
   .navbar-left {
     width: 100%;
+    gap: 12px;
   }
 
   .navbar-right {
     width: 100%;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
   }
 
-  .navbar-contact {
+  .navbar-college-name {
+    font-size: 20px;
+  }
+
+  .navbar-tagline {
     font-size: 12px;
-    gap: 4px;
   }
 
   .navbar-hamburger {
-    font-size: 22px;
+    position: absolute;
+    top: 28px;
+    right: 20px;
+    font-size: 24px;
   }
 }

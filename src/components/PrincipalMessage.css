@@ -1,18 +1,28 @@
+/* =========================
+   MAIN SECTION
+========================= */
+
 .principalmessage {
   width: 100%;
-  margin-top: 8rem;
   padding: 45px 0;
-  background: #f8f9fa;
+  background: #4B0A0A;
 }
 
-/* WRAPPER */
+/* =========================
+   WRAPPER
+========================= */
+
 .principalmessage-wrapper {
   display: flex;
-  align-items: center;
-  gap: 60px;
+  justify-content: space-between;
+  align-items: center !important;
+  gap: 20px;
 }
 
-/* LEFT SIDE */
+/* =========================
+   LEFT SIDE
+========================= */
+
 .principalmessage-left {
   flex: 1;
   text-align: center;
@@ -20,85 +30,94 @@
 
 .principalmessage-image {
   width: 100%;
-  width: 380px;
-  height: 380px;
-  border-radius: 5px;
+  max-width: 450px;
+  height: 300px;
   object-fit: cover;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  border: 5px solid #F3D79B;
 }
 
 /* NAME BOX */
+
 .principalmessage-namebox {
   margin-top: 20px;
 }
 
 .principalmessage-namebox h4 {
-  font-size: 24px;
-  color: #4B0A0A;
+  font-size: 28px;
+  color: #F3D79B;
   margin-bottom: 6px;
   font-weight: 700;
 }
 
 .principalmessage-namebox p {
   font-size: 16px;
-  color: #666;
+  color: #fff;
+  margin: 0;
 }
 
-/* RIGHT SIDE */
+/* =========================
+   RIGHT SIDE
+========================= */
+
 .principalmessage-right {
   flex: 1.5;
-  text-align: left;
 }
 
+/* HEADING */
+
 .principalmessage-heading {
-  font-size: 42px;
-  color: #4B0A0A;
-  margin-bottom: 25px;
+  font-size: 46px;
+  color: #F3D79B;
+  margin-bottom: 30px;
   font-weight: 700;
 }
+
+/* CONTENT BOX */
+
+.principalmessage-content {
+  position: relative;
+  background: rgba(255,255,255,0.08);
+  padding: 40px;
+  border-radius: 10px;
+}
+
+/* QUOTES */
+
+.quote-left {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 28px;
+  color: #fff;
+}
+
+.quote-right {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 28px;
+  color: #fff;
+}
+
+/* TEXT */
 
 .principalmessage-text {
   font-size: 17px;
   line-height: 1.9;
-  color: #444;
-  margin-bottom: 22px;
-}
-/* box points  */
-/* BOX POINTS */
-.box-points {
-  width: 100%;
-  background: #fff;
-  padding: 45px;
-  margin-top: 60px;
-  border-radius: 12px;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  color: #fff;
+  margin-bottom: 20px;
+  padding: 0 18px;
 }
 
-/* HEADING */
-.box-points-heading {
-  text-align: center;
-  font-size: 34px;
-  font-weight: 700;
-  color: #4B0A0A;
-  margin-bottom: 35px;
+.principalmessage-text:last-child {
+  margin-bottom: 0;
 }
 
-/* LIST */
-.box-points-list {
-  margin: 0;
-  padding-left: 20px;
-}
+/* =========================
+   RESPONSIVE
+========================= */
 
-/* POINTS */
-.box-points-list li {
-  font-size: 17px;
-  line-height: 1.9;
-  color: #444;
-  margin-bottom: 18px;
-}
-
-
-/* RESPONSIVE */
 @media (max-width: 992px) {
 
   .principalmessage-wrapper {
@@ -107,11 +126,11 @@
   }
 
   .principalmessage-right {
-    text-align: center;
+    width: 100%;
   }
 
   .principalmessage-heading {
-    font-size: 34px;
+    font-size: 36px;
   }
 }
 
@@ -121,12 +140,39 @@
     padding: 60px 0;
   }
 
+  .principalmessage-image {
+    max-width: 320px;
+    height: 380px;
+  }
+
   .principalmessage-heading {
-    font-size: 28px;
+    font-size: 30px;
+  }
+
+  .principalmessage-content {
+    padding: 30px 20px;
   }
 
   .principalmessage-text {
     font-size: 15px;
+    line-height: 1.8;
+    padding: 0;
+  }
+
+  .quote-left,
+  .quote-right {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .principalmessage-wrapper {
+    gap: 40px;
+  }
+
+  .principalmessage-heading {
+    font-size: 26px;
   }
 
   .principalmessage-namebox h4 {
@@ -136,18 +182,12 @@
   .principalmessage-namebox p {
     font-size: 14px;
   }
-  /*  */
-  .box-points {
-    padding: 25px;
-    margin-top: 40px;
+
+  .principalmessage-image {
+    height: 330px;
   }
 
-  .box-points-heading {
-    font-size: 26px;
-    margin-bottom: 25px;
-  }
-
-  .box-points-list li {
-    font-size: 15px;
+  .principalmessage-text {
+    font-size: 14px;
   }
 }

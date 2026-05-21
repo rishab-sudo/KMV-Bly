@@ -41,6 +41,11 @@ const Home = () => {
 
     </section>
     {/*  */}
+
+    
+   <HomeAbout/>
+
+   {/*  */}
     <HomeCards
   cardsData={[
     {
@@ -74,7 +79,6 @@ const Home = () => {
 />
   
 
-   <HomeAbout/>
 
 
     {/* <Stats/> */}
