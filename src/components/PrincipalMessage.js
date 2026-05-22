@@ -12,9 +12,21 @@ const PrincipalMessage = () => {
 
       <div className="container">
 
+        {/* HEADING ABOVE */}
+
+        <div className="principalmessage-top">
+
+          <h2 className="principalmessage-heading">
+            Principal Message
+          </h2>
+
+        </div>
+
+        {/* IMAGE + MESSAGE ROW */}
+
         <div className="principalmessage-wrapper">
 
-          {/* LEFT SIDE */}
+          {/* LEFT SIDE IMAGE */}
 
           <div className="principalmessage-left">
 
@@ -26,8 +38,6 @@ const PrincipalMessage = () => {
 
             <div className="principalmessage-namebox">
 
-           
-
               <p>
                 Principal, KMV College
               </p>
@@ -36,13 +46,9 @@ const PrincipalMessage = () => {
 
           </div>
 
-          {/* RIGHT SIDE */}
+          {/* RIGHT SIDE MESSAGE */}
 
           <div className="principalmessage-right">
-
-            <h2 className="principalmessage-heading">
-              Principal Message
-            </h2>
 
             <div className="principalmessage-content">
 

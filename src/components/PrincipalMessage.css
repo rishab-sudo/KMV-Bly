@@ -4,8 +4,25 @@
 
 .principalmessage {
   width: 100%;
-  padding: 45px 0;
+  padding: 55px 0;
   background: #4B0A0A;
+}
+
+/* =========================
+   TOP HEADING
+========================= */
+
+.principalmessage-top {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.principalmessage-heading {
+  font-size: 46px;
+  color: #F3D79B;
+  font-weight: 700;
+  margin: 0;
+  text-align: center;
 }
 
 /* =========================
@@ -14,9 +31,9 @@
 
 .principalmessage-wrapper {
   display: flex;
-  justify-content: space-between;
-  align-items: center !important;
-  gap: 20px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 40px;
 }
 
 /* =========================
@@ -24,30 +41,23 @@
 ========================= */
 
 .principalmessage-left {
-  flex: 1;
+  flex: 0 0 38%;
   text-align: center;
 }
 
 .principalmessage-image {
   width: 100%;
   max-width: 450px;
-  height: 300px;
+  height: 320px;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 10px;
   border: 5px solid #F3D79B;
 }
 
 /* NAME BOX */
 
 .principalmessage-namebox {
-  margin-top: 20px;
-}
-
-.principalmessage-namebox h4 {
-  font-size: 28px;
-  color: #F3D79B;
-  margin-bottom: 6px;
-  font-weight: 700;
+  margin-top: 18px;
 }
 
 .principalmessage-namebox p {
@@ -61,32 +71,28 @@
 ========================= */
 
 .principalmessage-right {
-  flex: 1.5;
-}
-
-/* HEADING */
-
-.principalmessage-heading {
-  font-size: 46px;
-  color: #F3D79B;
-  margin-bottom: 30px;
-  font-weight: 700;
+  flex: 1;
 }
 
 /* CONTENT BOX */
 
 .principalmessage-content {
   position: relative;
+    height: 320px !important;
+    /* background-color: #F3D79B !important; */
   background: rgba(255,255,255,0.08);
-  padding: 40px;
-  border-radius: 10px;
+  padding: 45px;
+  border-radius: 12px;
+  height: 100%;
 }
 
-/* QUOTES */
+/* =========================
+   QUOTES
+========================= */
 
 .quote-left {
   position: absolute;
-  top: 20px;
+  top: 18px;
   left: 20px;
   font-size: 28px;
   color: #fff;
@@ -94,19 +100,21 @@
 
 .quote-right {
   position: absolute;
-  bottom: 20px;
+  bottom: 18px;
   right: 20px;
   font-size: 28px;
   color: #fff;
 }
 
-/* TEXT */
+/* =========================
+   TEXT
+========================= */
 
 .principalmessage-text {
   font-size: 17px;
   line-height: 1.9;
   color: #fff;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
   padding: 0 18px;
 }
 
@@ -122,9 +130,10 @@
 
   .principalmessage-wrapper {
     flex-direction: column;
-    text-align: center;
+    align-items: center;
   }
 
+  .principalmessage-left,
   .principalmessage-right {
     width: 100%;
   }
@@ -132,25 +141,29 @@
   .principalmessage-heading {
     font-size: 36px;
   }
+
+  .principalmessage-content {
+    padding: 40px 25px;
+  }
 }
 
 @media (max-width: 768px) {
 
   .principalmessage {
-    padding: 60px 0;
-  }
-
-  .principalmessage-image {
-    max-width: 320px;
-    height: 380px;
+    padding: 50px 0;
   }
 
   .principalmessage-heading {
     font-size: 30px;
   }
 
+  .principalmessage-image {
+    max-width: 100%;
+    height: 360px;
+  }
+
   .principalmessage-content {
-    padding: 30px 20px;
+    padding: 35px 20px;
   }
 
   .principalmessage-text {
@@ -168,23 +181,19 @@
 @media (max-width: 576px) {
 
   .principalmessage-wrapper {
-    gap: 40px;
+    gap: 30px;
   }
 
   .principalmessage-heading {
     font-size: 26px;
   }
 
-  .principalmessage-namebox h4 {
-    font-size: 22px;
+  .principalmessage-image {
+    height: 320px;
   }
 
   .principalmessage-namebox p {
     font-size: 14px;
-  }
-
-  .principalmessage-image {
-    height: 330px;
   }
 
   .principalmessage-text {

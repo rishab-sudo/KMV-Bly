@@ -12,11 +12,11 @@ const Contact = () => {
     <section className="contact">
 
       {/* HERO SECTION */}
-    <TopBanner
-  title="Contact"
-  currentPage="Contact"
-  backgroundImage="/images/kmv-banner1.jpeg"
-/>
+      <TopBanner
+        title="Contact"
+        currentPage="Contact"
+        backgroundImage="/images/kmv-banner1.jpeg"
+      />
 
       <div className="container">
 
@@ -34,8 +34,8 @@ const Contact = () => {
               <h3>Our Address</h3>
 
               <p>
-                KMV College, Civil Lines,
-                Meerut, Uttar Pradesh, India
+                Kanya Mahavidyalaya Arya Samaj,
+                Bhoor, Bareilly, Uttar Pradesh
               </p>
             </div>
 
@@ -52,7 +52,7 @@ const Contact = () => {
               <h3>Phone Number</h3>
 
               <p>
-                +91 9876543210
+                +91 9760502221
               </p>
             </div>
 
@@ -69,7 +69,7 @@ const Contact = () => {
               <h3>Email Address</h3>
 
               <p>
-                info@kmvcollege.edu
+                kmvbly@gmail.com
               </p>
             </div>
 
@@ -100,48 +100,85 @@ const Contact = () => {
 
             <form className="contact-form">
 
-              {/* NAME */}
-              <label className="contact-form-label">
-                Full Name
-              </label>
+              {/* NAME ROW */}
+              <div className="contact-form-row">
 
-              <input
-                type="text"
-                placeholder="Enter Your Full Name"
-                className="contact-form-input"
-              />
+                <div className="contact-form-group">
 
-              {/* EMAIL */}
-              <label className="contact-form-label">
-                Email Address
-              </label>
+                  <label className="contact-form-label">
+                    First Name
+                  </label>
 
-              <input
-                type="email"
-                placeholder="Enter Your Email Address"
-                className="contact-form-input"
-              />
+                  <input
+                    type="text"
+                    placeholder="Enter First Name"
+                    className="contact-form-input"
+                  />
 
-              {/* PHONE */}
-              <label className="contact-form-label">
-                Phone Number
-              </label>
+                </div>
 
-              <input
-                type="number"
-                placeholder="Enter Your Phone Number"
-                className="contact-form-input"
-              />
+                <div className="contact-form-group">
+
+                  <label className="contact-form-label">
+                    Last Name
+                  </label>
+
+                  <input
+                    type="text"
+                    placeholder="Enter Last Name"
+                    className="contact-form-input"
+                  />
+
+                </div>
+
+              </div>
+
+              {/* EMAIL + PHONE */}
+              <div className="contact-form-row">
+
+                <div className="contact-form-group">
+
+                  <label className="contact-form-label">
+                    Email Address
+                  </label>
+
+                  <input
+                    type="email"
+                    placeholder="Enter Email Address"
+                    className="contact-form-input"
+                  />
+
+                </div>
+
+                <div className="contact-form-group">
+
+                  <label className="contact-form-label">
+                    Mobile Number
+                  </label>
+
+                  <input
+                    type="number"
+                    placeholder="Enter Mobile Number"
+                    className="contact-form-input"
+                  />
+
+                </div>
+
+              </div>
 
               {/* MESSAGE */}
-              <label className="contact-form-label">
-                Message
-              </label>
+              <div className="contact-form-group">
 
-              <textarea
-                placeholder="Write Your Message Here"
-                className="contact-form-textarea"
-              ></textarea>
+                <label className="contact-form-label">
+                  Message
+                </label>
+
+                <textarea
+                  placeholder="Write Your Message Here"
+                  className="contact-form-textarea"
+                ></textarea>
+
+              </div>
 
               <button
                 type="submit"
@@ -162,7 +199,7 @@ const Contact = () => {
           <iframe
             title="Google Map"
             className="contact-map-frame"
-            src="https://maps.google.com/maps?q=Meerut&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            src="https://maps.google.com/maps?q=bareilly&t=&z=13&ie=UTF8&iwloc=&output=embed"
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"

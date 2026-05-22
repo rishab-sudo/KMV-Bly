@@ -12,6 +12,7 @@ import {
 } from "react-icons/fa";
 import HomeGallery from '../components/HomeGallery';
 import HomeAbout from '../components/HomeAbout';
+import HomeCourses from '../components/HomeCourses';
 
 const Home = () => {
      
@@ -84,7 +85,7 @@ const Home = () => {
     {/* <Stats/> */}
 
 <PrincipalMessage/>
-
+<HomeCourses/>
 <HomeGallery/>
 
     </div>

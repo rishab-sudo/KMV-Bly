@@ -1,0 +1,155 @@
+/* =========================
+   HOME COURSE SECTION
+========================= */
+
+.homecourse {
+  width: 100%;
+  padding: 80px 0;
+  /* background: #f8f1e7; */
+   background: #f8f1e752;
+  overflow: hidden;
+}
+
+/* TOP */
+
+.homecourse-top {
+  text-align: center;
+  margin-bottom: 55px;
+}
+
+.homecourse-subtitle {
+  display: inline-block;
+  background: #7b1113;
+  color: #fff;
+  padding: 8px 22px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 18px;
+  letter-spacing: 1px;
+}
+
+.homecourse-heading {
+  font-size: 42px;
+  font-weight: 700;
+  color: #7b1113;
+  margin-bottom: 18px;
+}
+
+.homecourse-text {
+  max-width: 760px;
+  margin: auto;
+  color: #555;
+  line-height: 1.9;
+  font-size: 17px;
+}
+
+/* CONTENT */
+
+.homecourse-content {
+  width: 100%;
+  display: flex;
+  gap: 30px;
+}
+
+/* CARD */
+
+.homecourse-card {
+  width: 100%;
+  background: #fffaf4;
+  border-top: 5px solid #7b1113;
+  padding: 40px 35px;
+  border-radius: 22px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: 0.4s ease;
+}
+
+.homecourse-card:hover {
+  transform: translateY(-6px);
+}
+
+/* ICON */
+
+.homecourse-icon {
+  width: 75px;
+  height: 75px;
+  background: #7b1113;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  margin-bottom: 25px;
+}
+
+/* TITLE */
+
+.homecourse-cardtitle {
+  font-size: 28px;
+  color: #7b1113;
+  margin-bottom: 18px;
+  font-weight: 700;
+}
+
+/* TEXT */
+
+.homecourse-cardtext {
+  color: #555;
+  line-height: 1.9;
+  margin-bottom: 28px;
+  font-size: 16px;
+}
+
+/* BUTTON */
+
+.homecourse-btn {
+  display: inline-block;
+  background: #7b1113;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.homecourse-btn:hover {
+  background: #5d0d0f;
+  color: #fff;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 991px) {
+
+  .homecourse-content {
+    flex-direction: column;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .homecourse {
+    padding: 60px 0;
+  }
+
+  .homecourse-heading {
+    font-size: 32px;
+  }
+
+  .homecourse-card {
+    padding: 28px;
+  }
+
+  .homecourse-cardtitle {
+    font-size: 24px;
+  }
+
+  .homecourse-text,
+  .homecourse-cardtext {
+    font-size: 15px;
+  }
+
+}

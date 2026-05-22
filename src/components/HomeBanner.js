@@ -26,27 +26,28 @@ const HomeBanner = () => {
             <div className="homebanner-overlay"></div>
 
             <div className="homebanner-content">
-              <span className="homebanner-subtitle">
-                Welcome To KMV College
-              </span>
+     <span className="homebanner-subtitle">
+  कन्या महाविद्यालय में आपका स्वागत है
+</span>
 
-              <h1>
-                Empowering Students Through Quality Education
-              </h1>
+<h1>
+  गुणवत्तापूर्ण शिक्षा से छात्राओं का सशक्तिकरण
+</h1>
 
-              <p>
-                We help students build successful careers through
-                academic excellence, innovation, discipline and modern
-                learning environments.
-              </p>
+<p>
+  हमारा महाविद्यालय छात्राओं को उत्कृष्ट शिक्षा,
+  अनुशासन, संस्कार एवं आधुनिक शिक्षण वातावरण प्रदान
+  कर उज्ज्वल भविष्य की ओर अग्रसर करता है।
+</p>
+
 
               <div className="homebanner-buttons">
                 <a href="/courses" className="banner-btn banner-btn-fill">
-                  Explore Courses
+                  पाठ्यक्रम देखें
                 </a>
 
                 <a href="/admission" className="banner-btn banner-btn-outline">
-                  Apply Now
+                  प्रवेश लें
                 </a>
               </div>
             </div>
@@ -68,26 +69,27 @@ const HomeBanner = () => {
 
             <div className="homebanner-content">
               <span className="homebanner-subtitle">
-                Build Your Bright Future
-              </span>
+  उज्ज्वल भविष्य की ओर एक नया कदम
+</span>
 
-              <h1>
-                Excellence, Discipline & Academic Growth
-              </h1>
+<h1>
+  शिक्षा, अनुशासन एवं छात्राओं का विकास
+</h1>
 
-              <p>
-                Experience quality education with expert faculty,
-                advanced infrastructure and opportunities for holistic
-                student development.
-              </p>
+<p>
+  अनुभवी शिक्षकों, श्रेष्ठ शैक्षिक वातावरण एवं सांस्कृतिक
+  गतिविधियों के माध्यम से छात्राओं के सर्वांगीण विकास
+  एवं उज्ज्वल भविष्य पर विशेष ध्यान दिया जाता है।
+</p>
+
 
               <div className="homebanner-buttons">
                 <a href="/courses" className="banner-btn banner-btn-fill">
-                  Explore Courses
+                  पाठ्यक्रम देखें
                 </a>
 
                 <a href="/admission" className="banner-btn banner-btn-outline">
-                  Apply Now
+                  प्रवेश लें
                 </a>
               </div>
             </div>
@@ -108,26 +110,27 @@ const HomeBanner = () => {
             <div className="homebanner-overlay"></div>
 
             <div className="homebanner-content">
-              <span className="homebanner-subtitle">
-                Admissions Open 2026
-              </span>
+             <span className="homebanner-subtitle">
+  प्रवेश प्रारम्भ सत्र 2026-27
+</span>
 
-              <h1>
-                Join One Of The Leading Educational Institutions
-              </h1>
+<h1>
+  उत्कृष्ट शिक्षा एवं संस्कारों का श्रेष्ठ केंद्र
+</h1>
 
-              <p>
-                Start your academic journey with KMV College and unlock
-                endless opportunities for growth and success.
-              </p>
+<p>
+  कन्या महाविद्यालय के साथ अपनी शैक्षिक यात्रा प्रारम्भ
+  करें और ज्ञान, आत्मविश्वास एवं सफलता के नए अवसरों
+  के साथ उज्ज्वल भविष्य की ओर आगे बढ़ें।
+</p>
 
               <div className="homebanner-buttons">
                 <a href="/courses" className="banner-btn banner-btn-fill">
-                  Explore Courses
+                  पाठ्यक्रम देखें
                 </a>
 
                 <a href="/admission" className="banner-btn banner-btn-outline">
-                  Apply Now
+                  प्रवेश लें
                 </a>
               </div>
             </div>

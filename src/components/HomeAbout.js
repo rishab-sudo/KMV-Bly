@@ -21,47 +21,46 @@ const HomeAbout = () => {
           </div>
 
           {/* RIGHT CONTENT */}
-          <div className="homeabout-content">
+        {/* RIGHT CONTENT */}
+<div className="homeabout-content">
 
-            <span className="homeabout-subtitle">
-              About KMV College
-            </span>
+  <span className="homeabout-subtitle">
+    About KMV College
+  </span>
 
-            <h2 className="homeabout-heading">
-              Empowering Students Through
-              Quality Education & Innovation
-            </h2>
+  <h2 className="homeabout-heading">
+     हमारी गौरवशाली स्थापना
+  </h2>
 
-            <p className="homeabout-description">
-              KMV College is committed to providing quality education,
-              academic excellence, and holistic development for students.
-              Our institution focuses on innovation, discipline,
-              leadership, and career-oriented learning to prepare
-              students for a bright future.
-            </p>
+  {/* PARA 1 */}
 
-            <p className="homeabout-description">
-              With experienced faculty members, modern infrastructure,
-              and student-centered teaching methods, we ensure an
-              inspiring educational environment that encourages growth,
-              confidence, and success.
-            </p>
+  <div className="homeabout-textbox">
 
-            <p className="homeabout-description">
-              We believe in empowering students through knowledge,
-              values, and practical learning experiences while promoting
-              academics, sports, cultural activities, and leadership
-              opportunities.
-            </p>
+    <p className="homeabout-description">
+   क ा महाव ालय आय समाज भूड़ बरेली आज से 66 वष पूव 1960 म आय समाज ारा सं ापत सं ा है। 
+   सं ापना वष म यह आगरा वश्वव ालय से एवं वष 1975 से महा ा ोतबा फूले रोहलखंड वश्वव ालय बरेली से ाई रूप से संबंध है।
+    </p>
 
-            {/* BUTTON */}
-            <div className="homeabout-btn-wrapper">
-              <a href="/about" className="homeabout-btn">
-                Know More
-              </a>
-            </div>
+  </div>
 
-          </div>
+  {/* PARA 2 */}
+
+  <div className="homeabout-textbox">
+    <p className="homeabout-description">
+    यह उत्तर प्रदेश बरेली जले म ापत प्रथम महला महाव ालय है जसे क ाओं क उच्च श ा क दशा म पहला पग उठाने का गौरव प्राप्त है।
+    </p>
+
+<p>यह उत्तर प्रदेश बरेली जले म ापत प्रथम महला महाव ालय है जसे क ाओं क उच्च श ा क दशा म पहला पग उठाने का गौरव प्राप्त है।</p>
+  </div>
+ {/* BUTTON */}
+
+  <div className="homeabout-btn-wrapper">
+    <a href="/about" className="homeabout-btn">
+      Know More
+    </a>
+  </div>
+
+</div>
 
         </div>
 

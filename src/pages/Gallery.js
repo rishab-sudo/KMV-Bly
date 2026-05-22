@@ -1,12 +1,19 @@
-import React, { useState } from "react";
-import TopBanner from "../components/TopBanner"
+import React, { useState, useRef } from "react";
+import Slider from "react-slick";
+import TopBanner from "../components/TopBanner";
+
 import {
   FaChevronLeft,
   FaChevronRight,
-  FaTimes
+  FaTimes,
+  FaArrowLeft,
+  FaArrowRight,
 } from "react-icons/fa";
 
 import "./Gallery.css";
+
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const gallerySections = [
   {
@@ -19,6 +26,8 @@ const gallerySections = [
       require("../assets/kmv-banner2.jpeg"),
       require("../assets/kmv-banner3.jpeg"),
       require("../assets/kmv-banner4.jpeg"),
+      require("../assets/kmv-banner1.jpeg"),
+      require("../assets/kmv-banner2.jpeg"),
     ],
   },
 
@@ -28,10 +37,12 @@ const gallerySections = [
       "Highlights of seminars, classrooms, workshops and laboratory sessions.",
 
     images: [
-      require("../assets//kmv-banner5.jpeg"),
+      require("../assets/kmv-banner5.jpeg"),
       require("../assets/kmv-banner6.jpeg"),
       require("../assets/kmv-banner7.jpeg"),
       require("../assets/kmv-banner8.jpeg"),
+      require("../assets/kmv-banner5.jpeg"),
+      require("../assets/kmv-banner6.jpeg"),
     ],
   },
 ];
@@ -42,6 +53,8 @@ const Gallery = () => {
   const [currentImage, setCurrentImage] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
   const [allImages, setAllImages] = useState([]);
+
+  const sliderRefs = useRef([]);
 
   /* OPEN POPUP */
   const openPopup = (images, index) => {
@@ -73,15 +86,45 @@ const Gallery = () => {
     setCurrentImage(allImages[newIndex]);
   };
 
+  /* SLICK SETTINGS */
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 900,
+    autoplay: true,
+    autoplaySpeed: 2200,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    arrows: false,
+    pauseOnHover: true,
+    cssEase: "ease-in-out",
+
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
+
   return (
     <section className="gallery">
 
       {/* HERO */}
-    <TopBanner
-  title="Gallery"
-  currentPage="Gallery"
-  backgroundImage="/images/kmv-banner1.jpeg"
-/>
+      <TopBanner
+        title="Gallery"
+        currentPage="Gallery"
+        backgroundImage="/images/kmv-banner1.jpeg"
+      />
 
       <div className="container">
 
@@ -93,43 +136,81 @@ const Gallery = () => {
             key={sectionIndex}
           >
 
-            {/* HEADING */}
+            {/* TOP */}
             <div className="gallery-top">
 
-              <h2 className="gallery-heading">
-                {section.heading}
-              </h2>
+              <div className="gallery-top-left">
 
-              <p className="gallery-description">
-                {section.description}
-              </p>
+                <h2 className="gallery-heading">
+                  {section.heading}
+                </h2>
+
+                <p className="gallery-description">
+                  {section.description}
+                </p>
+
+              </div>
+
+              {/* ARROWS */}
+              <div className="gallery-slider-arrows">
+
+                <button
+                  className="gallery-slider-arrow"
+                  onClick={() =>
+                    sliderRefs.current[sectionIndex].slickPrev()
+                  }
+                >
+                  <FaArrowLeft />
+                </button>
+
+                <button
+                  className="gallery-slider-arrow"
+                  onClick={() =>
+                    sliderRefs.current[sectionIndex].slickNext()
+                  }
+                >
+                  <FaArrowRight />
+                </button>
+
+              </div>
 
             </div>
 
-            {/* IMAGES */}
-            <div className="gallery-wrapper">
+            {/* SLIDER */}
+            <Slider
+              ref={(slider) =>
+                (sliderRefs.current[sectionIndex] = slider)
+              }
+              {...settings}
+            >
 
               {section.images.map((image, index) => (
 
                 <div
-                  className="gallery-card"
+                  className="gallery-slide"
                   key={index}
-                  onClick={() =>
-                    openPopup(section.images, index)
-                  }
                 >
 
-                  <img
-                    src={image}
-                    alt="gallery"
-                    className="gallery-image"
-                  />
+                  <div
+                    className="gallery-card"
+                    onClick={() =>
+                      openPopup(section.images, index)
+                    }
+                  >
+
+                    <img
+                      src={image}
+                      alt="gallery"
+                      className="gallery-image"
+                    />
+
+                  </div>
 
                 </div>
 
               ))}
 
-            </div>
+            </Slider>
 
           </div>
 

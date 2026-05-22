@@ -16,7 +16,7 @@
   gap: 0;
   /* border-radius: 15px; */
   overflow: hidden;
-  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.08);
 }
 
 /* =========================
@@ -28,7 +28,7 @@
   position: relative;
 
   /* CONTROL IMAGE HEIGHT HERE */
-  height: 650px;
+  height: 600px;
 
   overflow: hidden;
 }
@@ -50,7 +50,7 @@
 
 .homeabout-content {
   width: 52%;
-  background: #fff;
+  background: #f8f1e752;
   padding: 0px 45px;
 
   display: flex;

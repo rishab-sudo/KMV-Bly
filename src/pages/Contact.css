@@ -4,14 +4,14 @@
   padding-bottom: 80px;
 }
 
-
 /* TOP BOX */
 .contact-box {
   width: 100%;
   background: #fff;
   border-radius: 14px;
   box-shadow: 0 8px 30px rgba(0,0,0,0.08);
-margin-top: 3.5%;
+  margin-top: 3.5%;
+
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 
@@ -101,6 +101,17 @@ margin-top: 3.5%;
   font-weight: 600;
 }
 
+/* FORM ROW */
+.contact-form-row {
+  display: flex;
+  gap: 20px;
+}
+
+/* GROUP */
+.contact-form-group {
+  width: 100%;
+}
+
 /* LABEL */
 .contact-form-label {
   display: block;
@@ -184,6 +195,11 @@ margin-top: 3.5%;
 
   .contact-form-right {
     padding: 35px;
+  }
+
+  .contact-form-row {
+    flex-direction: column;
+    gap: 0;
   }
 
   .contact-hero-heading {
