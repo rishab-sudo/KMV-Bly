@@ -4,13 +4,13 @@
   background: #f9f4ec;
 }
 
-/* SECTION */
+/* ================= SECTION ================= */
 
 .courses-section {
   padding: 80px 0;
 }
 
-/* HEADING */
+/* ================= HEADING ================= */
 
 .course-heading {
   text-align: center;
@@ -25,18 +25,21 @@
   margin-bottom: 10px;
 }
 
-.course-heading h2 {
+.course-heading h2,
+.admission-heading h2 {
   font-size: 48px;
   color: #4B0A0A;
   font-weight: 700;
   margin-bottom: 20px;
 }
 
-.course-heading h2 span {
-  color: #4B0A0A;
+.course-heading h2 span,
+.admission-heading h2 span {
+  color: #7b1113;
 }
 
-.course-description {
+.course-description,
+.admission-heading p {
   max-width: 700px;
   margin: auto;
   font-size: 17px;
@@ -44,7 +47,7 @@
   color: #666;
 }
 
-/* ALERT */
+/* ================= ALERT ================= */
 
 .seat-alert {
   background: #4B0A0A;
@@ -57,7 +60,7 @@
   font-weight: 500;
 }
 
-/* GRID */
+/* ================= GRID ================= */
 
 .course-grid {
   display: grid;
@@ -65,7 +68,7 @@
   gap: 35px;
 }
 
-/* CARD */
+/* ================= CARD ================= */
 
 .course-card {
   background: #fff8ee;
@@ -73,6 +76,7 @@
   border-radius: 24px;
   padding: 40px 35px;
   transition: 0.3s ease;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.05);
 }
 
 .course-card:hover {
@@ -106,7 +110,7 @@
   font-weight: 500;
 }
 
-/* SUBJECTS */
+/* ================= SUBJECTS ================= */
 
 .subject-list {
   list-style: none;
@@ -129,7 +133,7 @@
   min-width: 18px;
 }
 
-/* BUTTON */
+/* ================= BUTTON ================= */
 
 .enroll-btn {
   margin-top: 25px;
@@ -144,30 +148,171 @@
 }
 
 .enroll-btn:hover {
-  background: #4B0A0A;
+  background: #7b1113;
 }
 
-/* RESPONSIVE */
+/* ================= ADMISSION SECTION ================= */
+
+.admission-section {
+  padding: 90px 0;
+  background: #fff8ee;
+}
+
+.admission-heading {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.admission-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+/* IMAGE */
+
+.admission-image img {
+  width: 100%;
+  border-radius: 24px;
+  border: 8px solid #fff;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+}
+
+/* CONTENT */
+
+.admission-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* CARD */
+
+.admission-card {
+  background: #ffffff;
+  border-radius: 22px;
+  padding: 30px;
+  display: flex;
+  gap: 22px;
+  box-shadow: 0 10px 35px rgba(0,0,0,0.08);
+  border: 1px solid #eee;
+}
+
+.admission-card-icon {
+  width: 75px;
+  height: 75px;
+  background: #4B0A0A;
+  color: #fff;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  flex-shrink: 0;
+}
+
+.admission-card-content {
+  width: 100%;
+}
+
+.admission-card-content h3 {
+  color: #4B0A0A;
+  margin-bottom: 22px;
+  font-size: 28px;
+}
+
+/* INFO BOX */
+
+.admission-info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.info-box {
+  background: #f9f4ec;
+  padding: 18px;
+  border-radius: 14px;
+  text-align: center;
+}
+
+.info-box span {
+  display: block;
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.info-box h4 {
+  color: #4B0A0A;
+  font-size: 30px;
+  margin: 0;
+}
+
+/* PG TABLE */
+
+.pg-table {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.pg-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f9f4ec;
+  padding: 16px 20px;
+  border-radius: 12px;
+}
+
+.pg-row span {
+  color: #4B0A0A;
+  font-weight: 600;
+}
+
+.pg-row strong {
+  color: #7b1113;
+}
+
+/* ================= RESPONSIVE ================= */
 
 @media (max-width: 992px) {
 
-  .course-grid {
+  .course-grid,
+  .admission-wrapper {
     grid-template-columns: 1fr;
   }
 
-  .course-heading h2 {
+  .course-heading h2,
+  .admission-heading h2 {
     font-size: 38px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .admission-info {
+    grid-template-columns: 1fr;
+  }
+
+  .admission-card {
+    flex-direction: column;
   }
 
 }
 
 @media (max-width: 576px) {
 
-  .courses-section {
+  .courses-section,
+  .admission-section {
     padding: 50px 0;
   }
 
-  .course-heading h2 {
+  .course-heading h2,
+  .admission-heading h2 {
     font-size: 30px;
   }
 
@@ -179,12 +324,19 @@
     font-size: 28px;
   }
 
-  .course-description {
+  .course-description,
+  .admission-heading p {
     font-size: 15px;
   }
 
   .subject-list li {
     font-size: 15px;
+  }
+
+  .pg-row {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
   }
 
 }
