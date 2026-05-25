@@ -10,6 +10,8 @@ import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
 import Gallery from "./pages/Gallery";
 import Courses from "./pages/Courses";
+import Admission from "./pages/Admission";
+import Faculty from "./pages/Faculty";
 
 
 function App() {
@@ -24,6 +26,8 @@ function App() {
          <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/courses" element={<Courses />} />
+             <Route path="/admission" element={<Admission />} />
+                <Route path="/faculty" element={<Faculty />} />
          <Route path="/contact" element={<Contact />} />
           <Route path="/gallery" element={<Gallery />} />
       </Routes>
