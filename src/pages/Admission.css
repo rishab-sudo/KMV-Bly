@@ -57,8 +57,12 @@
 
 /* CARD */
 
+/* CARD */
 
 .admission-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   background: #fffdf8;
   padding: 40px;
   border-radius: 18px;
@@ -67,11 +71,20 @@
   transition: 0.4s ease;
 }
 
-
 .admission-card:hover {
   transform: translateY(-6px);
 }
 
+/* TOP FLEX */
+
+.admission-card-top {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+/* ICON */
 
 .admission-icon {
   width: 75px;
@@ -80,30 +93,32 @@
   color: #fff;
   border-radius: 50%;
 
-
   display: flex;
   align-items: center;
   justify-content: center;
 
-
   font-size: 30px;
-  margin-bottom: 25px;
+  flex-shrink: 0;
 }
 
+/* HEADING */
 
 .admission-card-heading {
   font-size: 30px;
   color: #4B0A0A;
-  margin-bottom: 18px;
   font-weight: 700;
+  margin: 0;
+  line-height: 1.4;
 }
 
+/* TEXT */
 
 .admission-card-text {
   font-size: 16px;
   line-height: 1.9;
   color: #555;
 }
+
 
 
 /* SECTION TOP */
@@ -259,9 +274,7 @@
   display: flex;
   align-items: center;
   gap: 18px;
-
-
-  padding: 22px 28px;
+padding: 22px 28px;
 }
 
 
@@ -269,26 +282,16 @@
 
 
 .admission-fee-icon {
-  width: 52px;
-  height: 52px;
-
-
-  background: #4B0A0A;
-  color: #fff;
-
-
-  border-radius: 50%;
-
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-
-  flex-shrink: 0;
-
-
-  font-size: 20px;
+width: 52px;
+height: 52px;
+ background: #4B0A0A;
+color: #fff;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-shrink: 0;
+font-size: 20px;
 }
 
 
@@ -452,16 +455,20 @@
     padding: 28px;
   }
 
+  .admission-card-top {
+    gap: 14px;
+    margin-bottom: 20px;
+  }
 
-  .admission-card-heading {
+  .admission-icon {
+    width: 60px;
+    height: 60px;
     font-size: 24px;
   }
 
-
-  .admission-section-heading {
-    font-size: 26px;
+  .admission-card-heading {
+    font-size: 22px;
   }
-
 
   .admission-important {
     padding: 30px 24px;

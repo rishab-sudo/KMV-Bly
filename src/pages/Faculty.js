@@ -511,161 +511,107 @@ const Faculty = () => {
 
         {/* GOVERNING COUNCIL */}
 
+{/* =========================
+   GOVERNING + MANAGEMENT COMBINED
+========================= */}
 
-        <div className="faculty-main-section">
+<div className="faculty-main-section">
 
+  <div className="faculty-title-row">
 
-          <div className="faculty-title-row">
+    <div className="faculty-title-icon">
+      <FaUniversity />
+    </div>
 
+    <div>
 
-            <div className="faculty-title-icon">
-              <FaUniversity />
-            </div>
+      <h2 className="faculty-section-heading">
+        समिति एवं प्रबंधन सदस्यगण
+      </h2>
 
+      <p className="faculty-section-subtext">
+        महाविद्यालय संचालन एवं प्रबंधन समिति
+      </p>
 
-            <div>
+    </div>
 
+  </div>
 
-              <h2 className="faculty-section-heading">
-                समिति संचालन परिषद
-              </h2>
+  {/* SINGLE BIG BOX */}
 
+  <div className="faculty-combined-box">
 
-              <p className="faculty-section-subtext">
-                सत्र 2025-26 के अनुसार समिति संचालन परिषद
-              </p>
+    {/* GOVERNING COUNCIL */}
 
+    <div className="faculty-combined-inner">
 
-            </div>
+      <h3 className="faculty-combined-title">
+        समिति संचालन परिषद
+      </h3>
 
+      <div className="faculty-combined-grid">
 
-          </div>
+        {governingCouncil.map((item, index) => (
 
+          <div
+            className="faculty-combined-card"
+            key={index}
+          >
 
-          <div className="faculty-management-wrapper">
+            <h4 className="faculty-combined-name">
+              {item.name}
+            </h4>
 
-
-            {governingCouncil.map((item, index) => (
-
-
-              <div
-                className="faculty-management-card"
-                key={index}
-              >
-
-
-                {/* <div className="faculty-management-icon">
-                  <FaUserTie />
-                </div> */}
-
-
-                <div>
-
-
-                  <h3 className="faculty-management-name">
-                    {item.name}
-                  </h3>
-
-
-                  <span className="faculty-management-role">
-                    {item.role}
-                  </span>
-
-
-                </div>
-
-
-              </div>
-
-
-            ))}
-
+            <span className="faculty-combined-role">
+              {item.role}
+            </span>
 
           </div>
 
+        ))}
 
-        </div>
+      </div>
 
+    </div>
 
-        {/* MANAGEMENT COMMITTEE */}
+    {/* MANAGEMENT COMMITTEE */}
 
+    <div className="faculty-combined-inner faculty-combined-inner-second">
 
-        <div className="faculty-main-section">
+      <h3 className="faculty-combined-title">
+        प्रबन्ध समिति सदस्यगण
+      </h3>
 
+      <div className="faculty-combined-grid">
 
-          <div className="faculty-title-row">
+        {managementCommittee.map((item, index) => (
 
+          <div
+            className="faculty-combined-card"
+            key={index}
+          >
 
-            <div className="faculty-title-icon">
-              <FaBookOpen />
-            </div>
+            <h4 className="faculty-combined-name">
+              {item.name}
+            </h4>
 
-
-            <div>
-
-
-              <h2 className="faculty-section-heading">
-                प्रबन्ध समिति सदस्यगण
-              </h2>
-
-
-              <p className="faculty-section-subtext">
-                Members of the Management Committee
-              </p>
-
-
-            </div>
-
+            <span className="faculty-combined-role">
+              {item.role}
+            </span>
 
           </div>
 
+        ))}
 
-          <div className="faculty-management-wrapper">
+      </div>
 
+    </div>
 
-            {managementCommittee.map((item, index) => (
+  </div>
 
+</div>
 
-              <div
-                className="faculty-management-card"
-                key={index}
-              >
-
-
-                {/* <div className="faculty-management-icon">
-                  <FaUserTie />
-                </div> */}
-
-
-                <div>
-
-
-                  <h3 className="faculty-management-name">
-                    {item.name}
-                  </h3>
-
-
-                  <span className="faculty-management-role">
-                    {item.role}
-                  </span>
-
-
-                </div>
-
-
-              </div>
-
-
-            ))}
-
-
-          </div>
-
-
-        </div>
-
-
-        {/* DEPARTMENT WISE STAFF */}
+    {/* DEPARTMENT WISE STAFF */}
 
 
         {departmentData.map((dept, index) => (

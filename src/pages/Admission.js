@@ -114,56 +114,61 @@ const Admission = () => {
 
           {/* CARD */}
 
+{/* CARD */}
 
-          <div className="admission-card">
+<div className="admission-card">
 
+  {/* ICON + HEADING FLEX */}
+  <div className="admission-card-top">
 
-            <div className="admission-icon">
-              <FaUniversity />
-            </div>
+    <div className="admission-icon">
+      <FaUniversity />
+    </div>
 
+    <h3 className="admission-card-heading">
+      बी० ए० प्रवेश नियम
+    </h3>
 
-            <h3 className="admission-card-heading">
-              बी० ए० प्रवेश नियम
-            </h3>
+  </div>
+<div> 
+  <p className="admission-card-text">
+    इण्टरमीडिएट अथवा समकक्ष परीक्षा में 40% से कम अंक
+    प्राप्त करने वाली छात्राओं को बी० ए० में प्रवेश नहीं
+    दिया जायेगा। आरक्षित वर्ग की छात्राओं को शासनादेश
+    अनुसार नियमानुसार छूट प्रदान की जायेगी।
+  </p></div>
+ 
 
-
-            <p className="admission-card-text">
-              इण्टरमीडिएट अथवा समकक्ष परीक्षा में 40% से कम अंक
-              प्राप्त करने वाली छात्राओं को बी० ए० में प्रवेश नहीं
-              दिया जायेगा। आरक्षित वर्ग की छात्राओं को शासनादेश
-              अनुसार नियमानुसार छूट प्रदान की जायेगी।
-            </p>
-
-
-          </div>
-
-
-          {/* CARD */}
-
-
-          <div className="admission-card">
+</div>
 
 
-            <div className="admission-icon">
-              <FaGraduationCap />
-            </div>
+{/* CARD */}
 
+<div className="admission-card">
 
-            <h3 className="admission-card-heading">
-              एम० ए० प्रवेश नियम
-            </h3>
+  {/* ICON + HEADING FLEX */}
+  <div className="admission-card-top">
 
+    <div className="admission-icon">
+      <FaGraduationCap />
+    </div>
 
-            <p className="admission-card-text">
-              एम० ए० में प्रवेश हेतु स्नातक परीक्षा में न्यूनतम
-              45% अंक आवश्यक हैं। अनुसूचित जाति एवं अनुसूचित
-              जनजाति की छात्राओं को नियमानुसार 5% की छूट
-              प्रदान की जायेगी।
-            </p>
+    <h3 className="admission-card-heading">
+      एम० ए० प्रवेश नियम
+    </h3>
 
+  </div>
+<div> 
+  <p className="admission-card-text">
+    एम० ए० में प्रवेश हेतु स्नातक परीक्षा में न्यूनतम
+    45% अंक आवश्यक हैं। अनुसूचित जाति एवं अनुसूचित
+    जनजाति की छात्राओं को नियमानुसार 5% की छूट
+    प्रदान की जायेगी।
+  </p>
+  </div>
+ 
 
-          </div>
+</div>
 
 
         </div>
