@@ -55,8 +55,7 @@ const HomeGallery = () => {
           </h2>
 
           <p className="home-gallery-text">
-            Explore memorable moments, campus life,
-            academic activities and events at KMV College.
+         केएमवी कॉलेज के यादगार पलों, परिसर जीवन, शैक्षणिक गतिविधियों एवं विभिन्न कार्यक्रमों को जानें।
           </p>
 
         </div>

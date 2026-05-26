@@ -163,17 +163,7 @@ const Navbar = () => {
                       Faculty
                     </a>
 
-                    <a href="/events">
-                      Events
-                    </a>
-
-                    <a href="/notice">
-                      Notice Board
-                    </a>
-
-                    <a href="/placements">
-                      Placements
-                    </a>
+                 
 
                   </div>
                 )}
@@ -192,11 +182,11 @@ const Navbar = () => {
                 </a>
               </li>
 
-              <li>
+              {/* <li>
                 <a href="/campus">
                   Campus
                 </a>
-              </li>
+              </li> */}
 
               <li>
                 <a href="/contact">
@@ -277,18 +267,7 @@ const Navbar = () => {
                   Faculty
                 </a>
 
-                <a href="/events">
-                  Events
-                </a>
-
-                <a href="/notice">
-                  Notice Board
-                </a>
-
-                <a href="/placements">
-                  Placements
-                </a>
-
+                
               </div>
 
             </details>
@@ -307,11 +286,11 @@ const Navbar = () => {
             </a>
           </li>
 
-          <li>
+          {/* <li>
             <a href="/campus">
               Campus
             </a>
-          </li>
+          </li> */}
 
           <li>
             <a href="/contact">

@@ -1,58 +1,58 @@
-/* About.css */
+/* =========================
+   ABOUT PAGE
+========================= */
 
 .about-page {
+  width: 100%;
   background: #f9f4ec;
+  overflow: hidden;
 }
 
-/* ABOUT SECTION */
+/* =========================
+   ABOUT SECTION
+========================= */
 
 .about-section {
-  padding: 50px 0;
+  padding: 60px 0;
 }
 
 .about-wrapper {
   display: flex;
   align-items: center;
   gap: 60px;
-  margin-bottom: 60px;
+  margin-bottom: 70px;
   flex-wrap: wrap;
 }
+
+/* CONTENT */
 
 .about-content {
   flex: 1;
   min-width: 320px;
 }
 
-.about-image-wrapper {
-  flex: 1;
-  min-width: 320px;
-}
-
-.about-image {
-  width: 100%;
-  border-radius: 20px;
-  object-fit: cover;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
-}
-
 .about-tag {
-  color: #4B0A0A;
+  display: inline-block;
+  background: #4B0A0A;
+  color: #fff;
+  padding: 10px 24px;
+  border-radius: 40px;
+  font-size: 14px;
   font-weight: 600;
+  margin-bottom: 18px;
   letter-spacing: 1px;
-  margin-bottom: 12px;
-  text-transform: uppercase;
 }
 
 .about-heading {
-  font-size: 44px;
+  font-size: 46px;
   line-height: 1.3;
   font-weight: 700;
   color: #4B0A0A;
-  margin-bottom: 25px;
+  margin-bottom: 28px;
 }
 
 .about-heading span {
-  color: #4B0A0A;
+  color: #7a1b1b;
 }
 
 .about-description {
@@ -63,75 +63,102 @@
   text-align: justify;
 }
 
-/* MISSION VISION */
+/* IMAGE */
+
+.about-image-wrapper {
+  flex: 1;
+  min-width: 320px;
+}
+
+.about-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 24px;
+  object-fit: cover;
+  box-shadow: 0 12px 35px rgba(0,0,0,0.12);
+}
+
+/* =========================
+   MISSION VISION
+========================= */
 
 .mission-vision-wrapper {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 25px;
-  margin-bottom: 60px;
+  gap: 30px;
+  margin-bottom: 70px;
 }
 
 .mv-card {
-  background: #4b0a0a;
+  background: #4B0A0A;
   color: #fff8ee;
-  border-radius: 20px;
-  padding: 35px;
+  border-radius: 24px;
+  padding: 40px;
   display: flex;
-  gap: 20px;
+  gap: 22px;
   align-items: flex-start;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.10);
 }
 
 .mv-icon {
-  width: 70px;
-  height: 70px;
-  min-width: 70px;
+  width: 75px;
+  height: 75px;
+  min-width: 75px;
   background: #f4e6d4;
   color: #4B0A0A;
   border-radius: 50%;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 28px;
+
+  font-size: 30px;
 }
 
 .mv-card h3 {
   font-size: 24px;
   margin-bottom: 10px;
+  font-weight: 600;
 }
 
 .mv-card h2 {
-  font-size: 30px;
-  margin-bottom: 10px;
+  font-size: 32px;
+  margin-bottom: 14px;
   line-height: 1.4;
+  font-weight: 700;
 }
 
 .mv-card p {
-  margin-bottom: 12px;
-  line-height: 1.7;
+  margin-bottom: 14px;
+  line-height: 1.8;
+  font-size: 16px;
 }
 
 .mv-card span {
-  line-height: 1.8;
+  line-height: 1.9;
   display: block;
+  font-size: 16px;
 }
 
-/* FEATURES */
+/* =========================
+   FEATURES
+========================= */
 
 .features-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 25px;
-  margin-bottom: 60px;
+  margin-bottom: 70px;
 }
 
 .feature-card {
   background: #fff8ee;
   border: 1px solid #ead8c0;
-  padding: 35px 25px;
-  border-radius: 18px;
+  padding: 38px 25px;
+  border-radius: 22px;
   text-align: center;
-  transition: 0.3s ease;
+  transition: 0.4s ease;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.05);
 }
 
 .feature-card:hover {
@@ -139,58 +166,131 @@
 }
 
 .feature-icon {
-  width: 75px;
-  height: 75px;
+  width: 78px;
+  height: 78px;
   background: #4B0A0A;
   color: #fff8ee;
   border-radius: 50%;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   margin: auto;
-  margin-bottom: 20px;
-  font-size: 30px;
+  margin-bottom: 22px;
+
+  font-size: 32px;
 }
 
 .feature-card h4 {
   color: #4B0A0A;
   margin-bottom: 15px;
   font-size: 22px;
+  font-weight: 700;
 }
 
 .feature-card p {
   color: #666;
   line-height: 1.8;
+  font-size: 15px;
 }
 
-/* OBJECTIVE */
+/* =========================
+   OBJECTIVES
+========================= */
 
 .objective-box {
   background: #fff8ee;
   border: 1px solid #ead8c0;
-  border-radius: 22px;
+  border-radius: 24px;
   padding: 50px;
+  margin-bottom: 70px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
 }
 
 .objective-box h2 {
   color: #4B0A0A;
-  font-size: 38px;
-  margin-bottom: 30px;
+  font-size: 40px;
+  margin-bottom: 35px;
   font-weight: 700;
 }
 
+/* LIST */
+
 .objective-box ul {
-  padding-left: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .objective-box li {
-  margin-bottom: 18px;
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+
+  margin-bottom: 22px;
+
   line-height: 1.9;
   color: #444;
   font-size: 17px;
 }
 
-/* RESPONSIVE */
+.objective-list-icon {
+  color: #4B0A0A;
+  font-size: 18px;
+  margin-top: 7px;
+  flex-shrink: 0;
+}
+/* =========================
+   BENEFITS
+========================= */
+
+.benifits {
+  background: #fff8ee;
+  border: 1px solid #ead8c0;
+  border-radius: 24px;
+  padding: 50px;
+  margin-bottom: 70px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.benifits h2 {
+  color: #4B0A0A;
+  font-size: 40px;
+  margin-bottom: 35px;
+  font-weight: 700;
+}
+
+/* LIST */
+
+.benifits ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.benifits li {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+
+  margin-bottom: 22px;
+
+  line-height: 1.9;
+  color: #444;
+  font-size: 17px;
+}
+
+.benifits-icon {
+  color: #4B0A0A;
+  font-size: 18px;
+  margin-top: 7px;
+  flex-shrink: 0;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
 
 @media (max-width: 992px) {
 
@@ -202,40 +302,75 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
+
+
   .about-heading {
-    font-size: 36px;
+    font-size: 38px;
   }
 
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
 
   .about-section {
     padding: 50px 0;
   }
 
-  .about-heading {
-    font-size: 28px;
+  .about-wrapper {
+    gap: 40px;
   }
+
+  .about-heading {
+    font-size: 32px;
+  }
+
+  .about-description {
+    font-size: 15px;
+  }
+
+  .mv-card {
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  .mv-card h2 {
+    font-size: 26px;
+  }
+
+ .objective-box li,
+.benifits li {
+  font-size: 15px;
+}
+
+.objective-box h2,
+.benifits h2 {
+  font-size: 26px;
+}
+
+}
+
+@media (max-width: 576px) {
 
   .features-grid {
     grid-template-columns: 1fr;
   }
 
-  .objective-box {
-    padding: 30px;
-  }
-
-  .mv-card {
-    flex-direction: column;
-  }
-
-  .mv-card h2 {
-    font-size: 24px;
-  }
-
-  .objective-box h2 {
+  .about-heading {
     font-size: 28px;
   }
+
+  .feature-card {
+    padding: 30px 22px;
+  }
+
+.objective-box li,
+.benifits li {
+  font-size: 15px;
+}
+
+.objective-box h2,
+.benifits h2 {
+  font-size: 26px;
+}
 
 }
