@@ -2,7 +2,7 @@ import React from "react";
 import {
 
   FaGraduationCap,
-  FaBookOpen,
+
   FaUniversity,
 } from "react-icons/fa";
 
