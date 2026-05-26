@@ -9,7 +9,7 @@ import {
   FaBullseye,
   FaEye,
   FaCheckCircle,
-  FaCircle,
+ 
 } from "react-icons/fa";
 
 import "./About.css";
