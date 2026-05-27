@@ -149,23 +149,17 @@ const Navbar = () => {
               >
 
                 <a href="/">
-                  Information <FaChevronDown />
+                  Admission <FaChevronDown />
                 </a>
 
                 {dropdownOpen && (
                   <div className="navbar-dropdown-menu">
 
                     <a href="/admission">
-                      Admission
+                      Admission Process
                     </a>
 
-                    <a href="/faculty">
-                      Faculty
-                    </a>
-
-                 
-
-                  </div>
+                </div>
                 )}
 
               </li>
@@ -173,6 +167,12 @@ const Navbar = () => {
               <li>
                 <a href="/courses">
                   Courses
+                </a>
+              </li>
+
+ <li>
+                <a href="/faculty">
+                  Faculty
                 </a>
               </li>
 
@@ -254,21 +254,16 @@ const Navbar = () => {
             <details>
 
               <summary>
-                Information
+                Admission
               </summary>
 
               <div className="mobile-submenu">
 
                 <a href="/admission">
-                  Admission
+                Admission Process
                 </a>
 
-                <a href="/faculty">
-                  Faculty
-                </a>
-
-                
-              </div>
+                </div>
 
             </details>
 
@@ -277,6 +272,12 @@ const Navbar = () => {
           <li>
             <a href="/courses">
               Courses
+            </a>
+          </li>
+
+<li>
+            <a href="/faculty">
+              Faculty
             </a>
           </li>
 
