@@ -1,7 +1,6 @@
 import React, { useMemo, useState } from "react";
 import {
   FaSearch,
-  FaEnvelope,
   FaChevronLeft,
   FaChevronRight,
 } from "react-icons/fa";
