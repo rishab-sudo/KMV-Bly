@@ -2,9 +2,9 @@ import React from "react";
 import TopBanner from "../components/TopBanner";
 import {
   FaGraduationCap,
-  FaUniversity,
+
   FaBookOpen,
-  FaArrowRight,
+
   FaUsers,
   FaLayerGroup,
   FaClipboardCheck,
