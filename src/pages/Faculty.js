@@ -9,7 +9,9 @@ import TopBanner from "../components/TopBanner";
 import "./Faculty.css";
 
 const facultyData = [
-  // PAGE 1
+  // =========================
+  // हिन्दी विभाग
+  // =========================
   {
     id: 1,
     page: 1,
@@ -18,22 +20,20 @@ const facultyData = [
     name: "डॉ० सविता उपाध्याय",
     qualification: "एम० ए० हिन्दी, पीएच० डी०",
     designation: "एसो० प्रो० एवं प्रभारी",
-    image:require("../assets/kmv-logo.png"),
+    image: require("../assets/kmv-logo.png"),
     email: "savita@kmvcollege.edu.in",
   },
-
   {
     id: 2,
     page: 1,
     subject: "हिन्दी",
     subjectEnglish: "hindi",
     name: "डॉ० रेनू उपाध्याय",
-    qualification: "एम० ए० हिन्दी, समाज शास्त्र, पीएच.डी.",
+    qualification: "एम० ए० हिन्दी, समाजशास्त्र, पीएच० डी०",
     designation: "एसो० प्रो०",
-     image:require("../assets/kmv-logo.png"),
+    image: require("../assets/kmv-logo.png"),
     email: "renu@kmvcollege.edu.in",
   },
-
   {
     id: 3,
     page: 1,
@@ -42,187 +42,205 @@ const facultyData = [
     name: "डॉ० अनीता वर्मा",
     qualification: "एम० ए० हिन्दी, नेट",
     designation: "असिस्टेंट प्रोफेसर",
-     image:require("../assets/kmv-logo.png"),
+    image: require("../assets/kmv-logo.png"),
     email: "anita@kmvcollege.edu.in",
   },
-    {
-    id: 4,
-    page: 1,
-    subject: "हिन्दी",
-    subjectEnglish: "hindi",
-    name: "डॉ० अनीता वर्मा",
-    qualification: "एम० ए० हिन्दी, नेट",
-    designation: "असिस्टेंट प्रोफेसर",
-     image:require("../assets/kmv-logo.png"),
-    email: "anita@kmvcollege.edu.in",
-  },
-      {
-    id: 5,
-    page: 1,
-    subject: "हिन्दी",
-    subjectEnglish: "hindi",
-    name: "डॉ० अनीता वर्मा",
-    qualification: "एम० ए० हिन्दी, नेट",
-    designation: "असिस्टेंट प्रोफेसर",
-     image:require("../assets/kmv-logo.png"),
-    email: "anita@kmvcollege.edu.in",
-  },
-      {
-    id: 6,
-    page: 1,
-    subject: "हिन्दी",
-    subjectEnglish: "hindi",
-    name: "डॉ० अनीता वर्मा",
-    qualification: "एम० ए० हिन्दी, नेट",
-    designation: "असिस्टेंट प्रोफेसर",
-     image:require("../assets/kmv-logo.png"),
-    email: "anita@kmvcollege.edu.in",
-  },
-
-  // PAGE 2
   {
     id: 4,
+    page: 1,
+    subject: "हिन्दी",
+    subjectEnglish: "hindi",
+    name: "डॉ० पूर्णिमा पाण्डेय",
+    qualification: "एम० ए० हिन्दी, नेट",
+    designation: "असिस्टेंट प्रोफेसर",
+    image: require("../assets/kmv-logo.png"),
+    email: "poornima@kmvcollege.edu.in",
+  },
+
+  // =========================
+  // राजनीति शास्त्र विभाग
+  // =========================
+  {
+    id: 5,
     page: 2,
     subject: "राजनीति शास्त्र",
     subjectEnglish: "political science",
     name: "डॉ० कुमुद प्रभाकर",
     qualification: "एम० ए० राजनीति शास्त्र, नेट, पीएच० डी०",
     designation: "एसो० प्रो०",
-    image:require("../assets/kmv-logo.png"),
+    image: require("../assets/kmv-logo.png"),
     email: "kumud@kmvcollege.edu.in",
   },
-
   {
-    id: 5,
-    page: 2,
-    subject: "राजनीति शास्त्र",
-    subjectEnglish: "politics",
-    name: "श्रीमती निधि सोनकर",
-    qualification: "एम० ए० राजनीतिशास्त्र, नेट",
-    designation: "असिस्टेंट प्रोफेसर",
-     image:require("../assets/kmv-logo.png"),
-    email: "nidhi@kmvcollege.edu.in",
-  },
-    {
     id: 6,
     page: 2,
     subject: "राजनीति शास्त्र",
-    subjectEnglish: "politics",
+    subjectEnglish: "political science",
     name: "श्रीमती निधि सोनकर",
-    qualification: "एम० ए० राजनीतिशास्त्र, नेट",
+    qualification: "एम० ए० राजनीति शास्त्र, नेट",
     designation: "असिस्टेंट प्रोफेसर",
-     image:require("../assets/kmv-logo.png"),
+    image: require("../assets/kmv-logo.png"),
     email: "nidhi@kmvcollege.edu.in",
   },
-    {
+
+  // =========================
+  // समाजशास्त्र विभाग
+  // =========================
+  {
     id: 7,
-    page: 2,
-    subject: "राजनीति शास्त्र",
-    subjectEnglish: "politics",
-    name: "श्रीमती निधि सोनकर",
-    qualification: "एम० ए० राजनीतिशास्त्र, नेट",
-    designation: "असिस्टेंट प्रोफेसर",
-     image:require("../assets/kmv-logo.png"),
-    email: "nidhi@kmvcollege.edu.in",
-  },
-    {
-    id: 8,
-    page: 2,
-    subject: "राजनीति शास्त्र",
-    subjectEnglish: "politics",
-    name: "श्रीमती निधि सोनकर",
-    qualification: "एम० ए० राजनीतिशास्त्र, नेट",
-    designation: "असिस्टेंट प्रोफेसर",
-     image:require("../assets/kmv-logo.png"),
-    email: "nidhi@kmvcollege.edu.in",
-  },
-    {
-    id: 9,
-    page: 2,
-    subject: "राजनीति शास्त्र",
-    subjectEnglish: "politics",
-    name: "श्रीमती निधि सोनकर",
-    qualification: "एम० ए० राजनीतिशास्त्र, नेट",
-    designation: "असिस्टेंट प्रोफेसर",
-     image:require("../assets/kmv-logo.png"),
-    email: "nidhi@kmvcollege.edu.in",
-  },
-
-  // PAGE 3
-  {
-    id: 6,
     page: 3,
     subject: "समाजशास्त्र",
     subjectEnglish: "sociology",
     name: "डॉ० सुषमा चौरसिया",
     qualification: "एम० ए० समाजशास्त्र, नेट, पीएच० डी०",
     designation: "एसो० प्रो०",
-     image:require("../assets/kmv-logo.png"),
+    image: require("../assets/kmv-logo.png"),
     email: "sushma@kmvcollege.edu.in",
   },
-
   {
-    id: 7,
+    id: 8,
     page: 3,
     subject: "समाजशास्त्र",
     subjectEnglish: "sociology",
     name: "डॉ० रीता मौर्या",
-    qualification: "एम.ए. समाजशास्त्र, एम.फिल. पीएच० डी०",
+    qualification: "एम० ए० समाजशास्त्र, एम०फिल०, पीएच० डी०",
     designation: "असिस्टेंट प्रोफेसर",
-     image:require("../assets/kmv-logo.png"),
+    image: require("../assets/kmv-logo.png"),
     email: "rita@kmvcollege.edu.in",
   },
 
-  // PAGE 4
+  // =========================
+  // अर्थशास्त्र विभाग
+  // =========================
   {
-    id: 8,
+    id: 9,
     page: 4,
     subject: "अर्थशास्त्र",
     subjectEnglish: "economics",
     name: "डॉ० अनीता भारद्वाज",
     qualification: "एम० ए० अर्थशास्त्र, पीएच० डी०",
     designation: "असिस्टेंट प्रोफेसर",
-     image:require("../assets/kmv-logo.png"),
-    email: "anita@kmvcollege.edu.in",
+    image: require("../assets/kmv-logo.png"),
+    email: "anita.b@kmvcollege.edu.in",
   },
-
   {
-    id: 9,
+    id: 10,
     page: 4,
     subject: "अर्थशास्त्र",
     subjectEnglish: "economics",
     name: "डॉ० स्वाति आनन्द",
     qualification: "एम० ए० अर्थशास्त्र, नेट",
     designation: "असिस्टेंट प्रोफेसर",
-     image:require("../assets/kmv-logo.png"),
+    image: require("../assets/kmv-logo.png"),
     email: "swati@kmvcollege.edu.in",
   },
 
-  // PAGE 5
+  // =========================
+  // गृहविज्ञान विभाग
+  // =========================
   {
-    id: 10,
+    id: 11,
     page: 5,
     subject: "गृहविज्ञान",
     subjectEnglish: "home science",
     name: "डॉ० परिधि सक्सेना",
     qualification: "एम० ए० गृहविज्ञान, पीएच० डी०",
     designation: "असिस्टेंट प्रोफेसर",
-    image:require("../assets/kmv-logo.png"),
+    image: require("../assets/kmv-logo.png"),
     email: "paridhi@kmvcollege.edu.in",
   },
 
+  // =========================
+  // शिक्षाशास्त्र विभाग
+  // =========================
   {
-    id: 11,
+    id: 12,
     page: 5,
     subject: "शिक्षाशास्त्र",
     subjectEnglish: "education",
     name: "डॉ० शुचि श्रीवास्तव",
     qualification: "एम० ए० शिक्षाशास्त्र, पीएच० डी०",
     designation: "असिस्टेंट प्रोफेसर",
-    image:require("../assets/kmv-logo.png"),
+    image: require("../assets/kmv-logo.png"),
     email: "shuchi@kmvcollege.edu.in",
   },
+
+  // =========================
+  // अंग्रेजी विभाग
+  // =========================
+  {
+    id: 13,
+    page: 6,
+    subject: "अंग्रेजी",
+    subjectEnglish: "english",
+    name: "डॉ० श्यामली सोना",
+    qualification: "एम० ए० अंग्रेजी, नेट",
+    designation: "असिस्टेंट प्रोफेसर",
+    image: require("../assets/kmv-logo.png"),
+    email: "shyamali@kmvcollege.edu.in",
+  },
+  {
+    id: 14,
+    page: 6,
+    subject: "अंग्रेजी",
+    subjectEnglish: "english",
+    name: "डॉ० जयश्रीबाला पाण्डेय",
+    qualification: "एम० ए० अंग्रेजी, नेट",
+    designation: "असिस्टेंट प्रोफेसर",
+    image: require("../assets/kmv-logo.png"),
+    email: "jayshreebala@kmvcollege.edu.in",
+  },
+
+  // =========================
+  // चित्रकला एवं रेखांकन विभाग
+  // =========================
+  {
+    id: 15,
+    page: 7,
+    subject: "चित्रकला एवं रेखांकन",
+    subjectEnglish: "drawing and painting",
+    name: "डॉ० अनुराधा आर्या",
+    qualification: "एम० ए० चित्रकला, नेट",
+    designation: "असिस्टेंट प्रोफेसर",
+    image: require("../assets/kmv-logo.png"),
+    email: "anuradha@kmvcollege.edu.in",
+  },
+  {
+    id: 16,
+    page: 7,
+    subject: "चित्रकला एवं रेखांकन",
+    subjectEnglish: "drawing and painting",
+    name: "डॉ० मुक्तामणि मिश्रा",
+    qualification: "एम० ए० चित्रकला, नेट",
+    designation: "असिस्टेंट प्रोफेसर",
+    image: require("../assets/kmv-logo.png"),
+    email: "muktamani@kmvcollege.edu.in",
+  },
+  {
+    id: 17,
+    page: 7,
+    subject: "चित्रकला एवं रेखांकन",
+    subjectEnglish: "drawing and painting",
+    name: "डॉ० सीमा मेहरा",
+    qualification: "एम० ए० चित्रकला, नेट",
+    designation: "असिस्टेंट प्रोफेसर",
+    image: require("../assets/kmv-logo.png"),
+    email: "seema@kmvcollege.edu.in",
+  },
+  {
+    id: 18,
+    page: 7,
+    subject: "चित्रकला एवं रेखांकन",
+    subjectEnglish: "drawing and painting",
+    name: "डॉ० अर्चना सक्सेना",
+    qualification: "एम० ए० चित्रकला, नेट",
+    designation: "असिस्टेंट प्रोफेसर",
+    image: require("../assets/kmv-logo.png"),
+    email: "archna@kmvcollege.edu.in",
+  },
 ];
+
+
 
 const subjects = [
   {
@@ -230,29 +248,40 @@ const subjects = [
     label: "हिन्दी",
     page: 1,
   },
-
   {
     id: 2,
     label: "राजनीति शास्त्र",
     page: 2,
   },
-
   {
     id: 3,
     label: "समाजशास्त्र",
     page: 3,
   },
-
   {
     id: 4,
     label: "अर्थशास्त्र",
     page: 4,
   },
-
   {
     id: 5,
     label: "गृहविज्ञान",
     page: 5,
+  },
+  {
+    id: 6,
+    label: "शिक्षाशास्त्र",
+    page: 5,
+  },
+  {
+    id: 7,
+    label: "अंग्रेजी",
+    page: 6,
+  },
+  {
+    id: 8,
+    label: "चित्रकला एवं रेखांकन",
+    page: 7,
   },
 ];
 
@@ -428,7 +457,7 @@ const Faculty = () => {
                   <FaChevronLeft />
                 </button>
 
-                {[1, 2, 3, 4, 5].map((page) => (
+             {[1, 2, 3, 4, 5, 6, 7].map((page) => (
                   <button
                     key={page}
                     className={
@@ -446,7 +475,7 @@ const Faculty = () => {
 
                 <button
                   onClick={() =>
-                    currentPage < 5 &&
+                    currentPage < 7 &&
                     setCurrentPage(currentPage + 1)
                   }
                 >
