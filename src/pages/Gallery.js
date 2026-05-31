@@ -123,7 +123,7 @@ const Gallery = () => {
       <TopBanner
         title="Gallery"
         currentPage="Gallery"
-        backgroundImage="/images/kmv-banner1.jpeg"
+          backgroundImage="/images/kmv-bly9.png"
       />
 
       <div className="container">

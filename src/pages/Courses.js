@@ -1,38 +1,41 @@
 import React from "react";
 import TopBanner from "../components/TopBanner";
 import {
-  FaBookOpen,
   FaGraduationCap,
-  FaPaintBrush,
-  FaMusic,
   FaUniversity,
+  FaBookOpen,
+  FaArrowRight,
   FaUsers,
+  FaLayerGroup,
+  FaClipboardCheck,
+
 } from "react-icons/fa";
 
 import "./Courses.css";
 
 const Courses = () => {
 
-  const baSubjects = [
-    "हिंदी",
-    "अंग्रेजी",
-    "समाजशास्त्र",
-    "राजनीति शास्त्र",
-    "अर्थशास्त्र",
-    "संगीत (गायन व वादन)",
-    "चित्रकला",
-    "इतिहास",
-    "संस्कृत",
-    "गृह विज्ञान (स्ववित्तपोषित पाठ्यक्रम)",
-    "शिक्षाशास्त्र (स्ववित्तपोषित पाठ्यक्रम)",
-  ];
 
-  const maSubjects = [
-    "हिंदी",
-    "अंग्रेजी",
-    "चित्रकला",
-    "संगीत (वादन)",
-  ];
+const baSubjects = [
+  "हिंदी",
+  "अंग्रेजी",
+  "समाजशास्त्र",
+  "राजनीति शास्त्र",
+  "अर्थशास्त्र",
+  "संगीत",
+  "चित्रकला",
+  "इतिहास",
+  "संस्कृत",
+  "गृह विज्ञान",
+  "शिक्षाशास्त्र",
+];
+
+const maSubjects = [
+  "हिंदी",
+  "अंग्रेजी",
+  "चित्रकला",
+  "संगीत",
+];
 
   return (
     <div className="courses-page">
@@ -40,229 +43,177 @@ const Courses = () => {
       <TopBanner
         title="Courses"
         currentPage="Courses"
-        backgroundImage="/images/kmv-banner1.jpeg"
+          backgroundImage="/images/kmv-bly9.png"
       />
 
       {/* ================= COURSES SECTION ================= */}
 
-      <section className="courses-section">
+<section className="subjects-section">
+  <div className="container">
 
-        <div className="container">
+    <div className="subjects-wrapper">
 
-          <div className="course-heading">
+      <div className="subject-card">
 
-            <p className="small-title">
-              Academic Programs
-            </p>
+        <h3>
+          <FaBookOpen /> बी.ए. विषय
+        </h3>
 
-            <h2>
-              हमारे <span>पाठ्यक्रम</span>
-            </h2>
-
-            <p className="course-description">
-              छात्राओं के उज्ज्वल भविष्य के लिए स्नातक एवं स्नातकोत्तर
-              स्तर पर गुणवत्तापूर्ण शिक्षा उपलब्ध कराई जाती है।
-            </p>
-
-          </div>
-
-          <div className="seat-alert">
-            ⚠ सीमित सीटें उपलब्ध हैं। प्रवेश पहले आओ पहले पाओ के आधार पर होगा।
-          </div>
-
-          <div className="course-grid">
-
-            {/* BA CARD */}
-
-            <div className="course-card">
-
-              <div className="course-icon">
-                <FaGraduationCap />
-              </div>
-
-              <h3>बी.ए. (B.A.)</h3>
-
-              <p className="course-subtitle">
-                स्नातक पाठ्यक्रम
-              </p>
-
-              <ul className="subject-list">
-
-                {baSubjects.map((subject, index) => (
-                  <li key={index}>
-                    <FaBookOpen className="subject-icon" />
-                    {subject}
-                  </li>
-                ))}
-
-              </ul>
-
-              <button className="enroll-btn">
-                Enroll Now
-              </button>
-
-            </div>
-
-            {/* MA CARD */}
-
-            <div className="course-card">
-
-              <div className="course-icon">
-                <FaMusic />
-              </div>
-
-              <h3>एम.ए. (M.A.)</h3>
-
-              <p className="course-subtitle">
-                स्नातकोत्तर पाठ्यक्रम
-              </p>
-
-              <ul className="subject-list">
-
-                {maSubjects.map((subject, index) => (
-                  <li key={index}>
-                    <FaPaintBrush className="subject-icon" />
-                    {subject}
-                  </li>
-                ))}
-
-              </ul>
-
-              <button className="enroll-btn">
-                Enroll Now
-              </button>
-
-            </div>
-
-          </div>
-
+        <div className="subject-tags">
+          {baSubjects.map((item, index) => (
+            <span key={index}>{item}</span>
+          ))}
         </div>
 
-      </section>
+      </div>
+
+      <div className="subject-card">
+
+        <h3>
+          <FaBookOpen /> एम.ए. विषय
+        </h3>
+
+        <div className="subject-tags">
+          {maSubjects.map((item, index) => (
+            <span key={index}>{item}</span>
+          ))}
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
 
       {/* ================= ADMISSION STATUS SECTION ================= */}
 
-      <section className="admission-section">
+   <section className="stats-section">
 
-        <div className="container">
+  <div className="container">
 
-          <div className="admission-heading">
+    <div className="stats-grid">
 
-            <p className="small-title">
-              Admission Overview
-            </p>
+      <div className="stat-card">
+        <FaLayerGroup />
+        <h3>15</h3>
+        <p>कुल पाठ्यक्रम</p>
+      </div>
 
-            <h2>
-              छात्राओं की <span>प्रवेश स्थिति</span>
-            </h2>
+      <div className="stat-card">
+        <FaGraduationCap />
+        <h3>865</h3>
+        <p>स्वीकृत सीटें</p>
+      </div>
 
-            <p>
-              स्नातक एवं स्नातकोत्तर स्तर पर उपलब्ध सीटों एवं वर्तमान
-              प्रवेश स्थिति का विवरण।
-            </p>
+      <div className="stat-card">
+        <FaUsers />
+        <h3>154</h3>
+        <p>प्रवेश छात्राएं</p>
+      </div>
 
-          </div>
+      <div className="stat-card">
+        <FaClipboardCheck />
+        <h3>711</h3>
+        <p>शेष सीटें</p>
+      </div>
 
-          <div className="admission-wrapper">
+    </div>
 
-            {/* LEFT IMAGE */}
+  </div>
 
-            <div className="admission-image">
+</section>
+{/*  */}
+<section className="seat-section">
 
-              <img
-                src="/images/admission-status.jpeg"
-                alt="Admission Status"
-              />
+  <div className="container">
 
-            </div>
+    <div className="section-heading">
+      <span>Seat Availability</span>
+      <h2>प्रवेश स्थिति</h2>
+    </div>
 
-            {/* RIGHT CONTENT */}
+    <div className="seat-card">
 
-            <div className="admission-content">
+      <h3>स्नातक स्तर (B.A.)</h3>
 
-              {/* UG CARD */}
+      <div className="seat-row">
+        <span>उपलब्ध विषय</span>
+        <strong>11</strong>
+      </div>
 
-              <div className="admission-card">
+      <div className="seat-row">
+        <span>कुल सीटें</span>
+        <strong>640</strong>
+      </div>
 
-                <div className="admission-card-icon">
-                  <FaUniversity />
-                </div>
+      <div className="seat-row">
+        <span>प्रवेश छात्राएं</span>
+        <strong>128</strong>
+      </div>
 
-                <div className="admission-card-content">
+    </div>
 
-                  <h3>स्नातक स्तर (B.A.)</h3>
+    <div className="seat-card">
 
-                  <div className="admission-info">
+      <h3>परास्नातक स्तर (M.A.)</h3>
 
-                    <div className="info-box">
-                      <span>विषय</span>
-                      <h4>11</h4>
-                    </div>
+      <div className="seat-row">
+        <span>हिंदी</span>
+        <strong>60 / 07</strong>
+      </div>
 
-                    <div className="info-box">
-                      <span>स्वीकृत सीट</span>
-                      <h4>640</h4>
-                    </div>
+      <div className="seat-row">
+        <span>अंग्रेजी</span>
+        <strong>60 / 08</strong>
+      </div>
 
-                    <div className="info-box">
-                      <span>प्रवेश छात्राएं</span>
-                      <h4>128</h4>
-                    </div>
+      <div className="seat-row">
+        <span>चित्रकला</span>
+        <strong>30 / 08</strong>
+      </div>
 
-                  </div>
+      <div className="seat-row">
+        <span>संगीत वादन</span>
+        <strong>15 / 03</strong>
+      </div>
 
-                </div>
+    </div>
 
-              </div>
+  </div>
 
-              {/* PG CARD */}
+</section>
+{/*  */}
+<section className="admission-cta">
 
-              <div className="admission-card">
+  <div className="container">
 
-                <div className="admission-card-icon">
-                  <FaUsers />
-                </div>
+    <div className="cta-box">
 
-                <div className="admission-card-content">
+      <h2>प्रवेश सत्र 2026-27 प्रारम्भ</h2>
 
-                  <h3>परास्नातक स्तर (M.A.)</h3>
+      <p>
+        अपने उज्ज्वल भविष्य की शुरुआत करें।
+        आज ही प्रवेश प्रक्रिया पूर्ण करें।
+      </p>
 
-                  <div className="pg-table">
+      <div className="cta-buttons">
 
-                    <div className="pg-row">
-                      <span>हिंदी</span>
-                      <strong>60 सीट / 07 प्रवेश</strong>
-                    </div>
+        <button className="apply-btn">
+          Apply Now
+        </button>
 
-                    <div className="pg-row">
-                      <span>अंग्रेजी</span>
-                      <strong>60 सीट / 08 प्रवेश</strong>
-                    </div>
+        <button className="contact-btn">
+          Contact Us
+        </button>
 
-                    <div className="pg-row">
-                      <span>चित्रकला</span>
-                      <strong>30 सीट / 08 प्रवेश</strong>
-                    </div>
+      </div>
 
-                    <div className="pg-row">
-                      <span>संगीत वादन</span>
-                      <strong>15 सीट / 03 प्रवेश</strong>
-                    </div>
+    </div>
 
-                  </div>
+  </div>
 
-                </div>
-
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </section>
-
+</section>
     </div>
   );
 };

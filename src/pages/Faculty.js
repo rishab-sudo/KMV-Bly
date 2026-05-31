@@ -287,7 +287,7 @@ const Faculty = () => {
       <TopBanner
         title="Faculty"
         currentPage="Faculty"
-        backgroundImage="/images/kmv-banner1.jpeg"
+         backgroundImage="/images/kmv-bly9.png"
       />
 
       <section className="faculty-main-section">

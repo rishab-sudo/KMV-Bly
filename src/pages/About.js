@@ -53,7 +53,7 @@ const About = () => {
       <TopBanner
         title="About Us"
         currentPage="About Us"
-        backgroundImage="/images/kmv-banner1.jpeg"
+        backgroundImage="/images/kmv-bly9.png"
       />
 
       {/* ABOUT SECTION */}
@@ -109,7 +109,7 @@ const About = () => {
             <div className="about-image-wrapper">
 
               <img
-                src="/images/kmv-banner1.jpeg"
+                src={require("../assets/aboutt-img.png")}
                 alt="College"
                 className="about-image"
               />

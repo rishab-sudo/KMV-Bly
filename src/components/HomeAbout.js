@@ -1,7 +1,6 @@
 import React from "react";
 import "./HomeAbout.css";
 
-import aboutImage from "../assets/kmv-banner1.jpeg";
 
 const HomeAbout = () => {
   return (
@@ -14,7 +13,7 @@ const HomeAbout = () => {
           {/* LEFT IMAGE */}
           <div className="homeabout-image-section">
             <img
-              src={aboutImage}
+              src={require("../assets/banner/kmv-bly9.png")}
               alt="KMV College"
               className="homeabout-image"
             />

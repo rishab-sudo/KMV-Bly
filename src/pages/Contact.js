@@ -15,7 +15,7 @@ const Contact = () => {
       <TopBanner
         title="Contact"
         currentPage="Contact"
-        backgroundImage="/images/kmv-banner1.jpeg"
+         backgroundImage="/images/kmv-bly9.png"
       />
 
       <div className="container">
@@ -84,7 +84,7 @@ const Contact = () => {
           <div className="contact-form-left">
 
             <img
-              src={require("../assets/kmv-banner3.jpeg")}
+              src={require("../assets/aboutt-img.png")}
               alt="contact"
               className="contact-form-image"
             />

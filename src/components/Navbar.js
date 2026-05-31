@@ -11,11 +11,13 @@ import {
 import "./Navbar.css";
 
 const Navbar = () => {
-  const [sidebarOpen, setSidebarOpen] =
-    useState(false);
+const [sidebarOpen, setSidebarOpen] = useState(false);
 
-  const [dropdownOpen, setDropdownOpen] =
-    useState(false);
+const [aboutDropdownOpen, setAboutDropdownOpen] =
+  useState(false);
+
+const [admissionDropdownOpen, setAdmissionDropdownOpen] =
+  useState(false);
 
   return (
     <>
@@ -130,39 +132,49 @@ const Navbar = () => {
                   Home
                 </a>
               </li>
+{/* ABOUT DROPDOWN */}
+<li
+  className="navbar-dropdown"
+  onMouseEnter={() => setAboutDropdownOpen(true)}
+  onMouseLeave={() => setAboutDropdownOpen(false)}
+>
+  <a href="/">
+    About <FaChevronDown />
+  </a>
 
-              <li>
-                <a href="/about">
-                  About
-                </a>
-              </li>
+  {aboutDropdownOpen && (
+    <div className="navbar-dropdown-menu">
+      <a href="/about">About Us</a>
+      <a href="/facilities">Facilities</a>
+        <a href="/certificate">
+        Certificates
+      </a>
+    </div>
+  )}
+</li>
 
-              {/* DROPDOWN */}
-              <li
-                className="navbar-dropdown"
-                onMouseEnter={() =>
-                  setDropdownOpen(true)
-                }
-                onMouseLeave={() =>
-                  setDropdownOpen(false)
-                }
-              >
+{/* ADMISSION DROPDOWN */}
+<li
+  className="navbar-dropdown"
+  onMouseEnter={() =>
+    setAdmissionDropdownOpen(true)
+  }
+  onMouseLeave={() =>
+    setAdmissionDropdownOpen(false)
+  }
+>
+  <a href="/">
+    Admission <FaChevronDown />
+  </a>
 
-                <a href="/">
-                  Admission <FaChevronDown />
-                </a>
-
-                {dropdownOpen && (
-                  <div className="navbar-dropdown-menu">
-
-                    <a href="/admission">
-                      Admission Process
-                    </a>
-
-                </div>
-                )}
-
-              </li>
+  {admissionDropdownOpen && (
+    <div className="navbar-dropdown-menu">
+      <a href="/admission">
+        Admission Process
+      </a>
+    </div>
+  )}
+</li>
 
               <li>
                 <a href="/courses">
@@ -243,11 +255,33 @@ const Navbar = () => {
             </a>
           </li>
 
-          <li>
-            <a href="/about">
-              About
-            </a>
-          </li>
+       <li className="mobile-dropdown">
+
+  <details>
+
+    <summary>
+      About
+    </summary>
+
+    <div className="mobile-submenu">
+
+      <a href="/about">
+        About Us
+      </a>
+
+      <a href="/facilities">
+        Facilities
+      </a>
+
+       <a href="/certificate">
+        Certificates
+      </a>
+
+    </div>
+
+  </details>
+
+</li>
 
           <li className="mobile-dropdown">
 

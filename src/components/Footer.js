@@ -149,7 +149,7 @@ const Footer = () => {
 
               <iframe
                 title="map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224345.8979692656!2d77.70641383052262!3d28.98721805182092!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390c64f457b0edb5%3A0x42b7f8f5b7f2d1b0!2sMeerut%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1710000000000!5m2!1sen!2sin"
+                src="https://maps.google.com/maps?q=bareilly&t=&z=13&ie=UTF8&iwloc=&output=embed"
                 width="100%"
                 height="140"
                 style={{ border: 0 }}

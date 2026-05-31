@@ -80,7 +80,7 @@ const Admission = () => {
       <TopBanner
         title="Admission"
         currentPage="Admission"
-        backgroundImage="/images/kmv-banner1.jpeg"
+        backgroundImage="/images/kmv-bly9.png"
       />
 
 
