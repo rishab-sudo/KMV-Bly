@@ -22,7 +22,7 @@ const baSubjects = [
   "समाजशास्त्र",
   "राजनीति शास्त्र",
   "अर्थशास्त्र",
-  "संगीत",
+  "संगीत वादन (तबला)",
   "चित्रकला",
   "इतिहास",
   "संस्कृत",
@@ -34,7 +34,7 @@ const maSubjects = [
   "हिंदी",
   "अंग्रेजी",
   "चित्रकला",
-  "संगीत",
+  "संगीत (वादन)",
 ];
 
   return (
@@ -108,15 +108,15 @@ const maSubjects = [
 
       <div className="stat-card">
         <FaUsers />
-        <h3>154</h3>
+        <h3>250+</h3>
         <p>प्रवेश छात्राएं</p>
       </div>
-
+{/* 
       <div className="stat-card">
         <FaClipboardCheck />
         <h3>711</h3>
         <p>शेष सीटें</p>
-      </div>
+      </div> */}
 
     </div>
 
@@ -146,11 +146,11 @@ const maSubjects = [
         <span>कुल सीटें</span>
         <strong>640</strong>
       </div>
-
+{/* 
       <div className="seat-row">
         <span>प्रवेश छात्राएं</span>
         <strong>128</strong>
-      </div>
+      </div> */}
 
     </div>
 
@@ -160,22 +160,22 @@ const maSubjects = [
 
       <div className="seat-row">
         <span>हिंदी</span>
-        <strong>60 / 07</strong>
+        <strong>60</strong>
       </div>
 
       <div className="seat-row">
         <span>अंग्रेजी</span>
-        <strong>60 / 08</strong>
+        <strong>60 </strong>
       </div>
 
       <div className="seat-row">
         <span>चित्रकला</span>
-        <strong>30 / 08</strong>
+        <strong>30</strong>
       </div>
 
       <div className="seat-row">
         <span>संगीत वादन</span>
-        <strong>15 / 03</strong>
+        <strong>15</strong>
       </div>
 
     </div>
