@@ -96,7 +96,7 @@ const Footer = () => {
             <div className="footer-social">
 
               <a
-                href="https://facebook.com"
+                href= "https://www.facebook.com/profile.php?id=61552258648539"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -104,7 +104,7 @@ const Footer = () => {
               </a>
 
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/kanyamahavidyalaybhoorbareilly/"
                 target="_blank"
                 rel="noreferrer"
               >
