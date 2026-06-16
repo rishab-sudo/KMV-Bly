@@ -82,12 +82,12 @@ const Footer = () => {
 
               <p>
                 <FaPhoneAlt className="footer-icon" />
-                +91 9876543210
+                +91 9760502221
               </p>
 
               <p>
                 <FaEnvelope className="footer-icon" />
-                info@kmvcollege.edu
+         kmvbly@gmail.com
               </p>
 
             </div>
@@ -111,16 +111,16 @@ const Footer = () => {
                 <FaInstagram />
               </a>
 
-              <a
+              {/* <a
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noreferrer"
               >
                 <FaLinkedinIn />
-              </a>
+              </a> */}
 
               <a
-                href="https://wa.me/919876543210"
+                href="https://wa.me/919760502221"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -140,8 +140,8 @@ const Footer = () => {
 
             <p className="footer-address">
               <FaMapMarkerAlt className="footer-icon" />
-              KMV College, Civil Lines,
-              Meerut, Uttar Pradesh, India
+         Arya Samaj,
+              Bhoor, Bareilly, <br/> Uttar Pradesh, India
             </p>
 
             {/* GOOGLE MAP */}

@@ -70,7 +70,7 @@ const [admissionDropdownOpen, setAdmissionDropdownOpen] =
                   </span>
 
                   <span className="navbar-contact-text">
-                    info@kmvcollege.edu
+                   kmvbly@gmail.com
                   </span>
 
                 </div>
@@ -91,7 +91,7 @@ const [admissionDropdownOpen, setAdmissionDropdownOpen] =
                   </span>
 
                   <span className="navbar-contact-text">
-                    +91 9876543210
+                    +91 97960502221
                   </span>
 
                 </div>

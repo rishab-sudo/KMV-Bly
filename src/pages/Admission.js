@@ -156,7 +156,7 @@ const Admission = () => {
                 </div>
 
                 <p>
-                  न्यूनतम 40% अंक प्राप्त करने वाली छात्राओं को ही प्रवेश मिलेगा।
+                  न्यूनतम 45% अंक प्राप्त करने वाली छात्राओं को ही प्रवेश मिलेगा।
                 </p>
               </div>
 
@@ -320,7 +320,7 @@ const Admission = () => {
 
    {/* FEES */}
     
-      <div className="admission-fees">
+      {/* <div className="admission-fees">
 
 
           <div className="admission-section-top">
@@ -338,8 +338,6 @@ const Admission = () => {
 
           </div>
 
-
-          {/* HEADER */}
           <div className="admission-fee-header">
 
 
@@ -356,7 +354,7 @@ const Admission = () => {
           </div>
 
 
-          {/* ROWS */}
+  
 
          <div className="admission-fee-rows">
 
@@ -370,7 +368,7 @@ const Admission = () => {
               >
 
 
-                {/* LEFT */}
+                
 
 
                 <div className="admission-fee-left">
@@ -389,7 +387,7 @@ const Admission = () => {
                 </div>
 
 
-                {/* RIGHT */}
+             
 
 
                 <div className="admission-fee-right">
@@ -406,7 +404,7 @@ const Admission = () => {
 ))}
 
           </div>
- </div>
+ </div> */}
 
  {/* IMPORTANT */}
 
