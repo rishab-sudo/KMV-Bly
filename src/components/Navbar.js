@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 import { Container } from "react-bootstrap";
-<<<<<<< HEAD
 import ApplyNowModal from "../components/ApplyNowModal";
-=======
->>>>>>> f3c1bd648b704dcdcddead3150310aec0e1fd731
 import {
   FaBars,
   FaTimes,
@@ -23,10 +20,7 @@ const [aboutDropdownOpen, setAboutDropdownOpen] =
 const [admissionDropdownOpen, setAdmissionDropdownOpen] =
   useState(false);
 
-<<<<<<< HEAD
     const [isModalOpen, setIsModalOpen] = useState(false);
-=======
->>>>>>> f3c1bd648b704dcdcddead3150310aec0e1fd731
   return (
     <>
       {/* =========================
@@ -217,7 +211,7 @@ const [admissionDropdownOpen, setAdmissionDropdownOpen] =
             </ul>
 
             {/* APPLY BUTTON */}
-<<<<<<< HEAD
+
      {/* Your existing navbar JSX */}
       <div className="navbar-apply-btn-wrapper">
         <button
@@ -233,7 +227,7 @@ const [admissionDropdownOpen, setAdmissionDropdownOpen] =
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
       />
-=======
+
             <div className="navbar-apply-btn-wrapper">
 
               <a
@@ -244,7 +238,7 @@ const [admissionDropdownOpen, setAdmissionDropdownOpen] =
               </a>
 
             </div>
->>>>>>> f3c1bd648b704dcdcddead3150310aec0e1fd731
+
 
           </div>
 
@@ -360,7 +354,6 @@ const [admissionDropdownOpen, setAdmissionDropdownOpen] =
           </li>
 
           <li>
-<<<<<<< HEAD
                <div className="navbar-apply-btn-wrapper">
         <button
           className="navbar-apply-btn"
@@ -377,14 +370,6 @@ const [admissionDropdownOpen, setAdmissionDropdownOpen] =
       />
 
        
-=======
-            <a
-              href="/apply-now"
-              className="mobile-apply-btn"
-            >
-              Apply Now
-            </a>
->>>>>>> f3c1bd648b704dcdcddead3150310aec0e1fd731
           </li>
 
         </ul>

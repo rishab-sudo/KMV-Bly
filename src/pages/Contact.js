@@ -1,22 +1,14 @@
-<<<<<<< HEAD
 import React, { useState } from "react";
-=======
-import React from "react";
->>>>>>> f3c1bd648b704dcdcddead3150310aec0e1fd731
 import {
   FaMapMarkerAlt,
   FaPhoneAlt,
   FaEnvelope
 } from "react-icons/fa";
-<<<<<<< HEAD
 import Swal from "sweetalert2";
-=======
->>>>>>> f3c1bd648b704dcdcddead3150310aec0e1fd731
 import TopBanner from "../components/TopBanner";
 import "./Contact.css";
 
 const Contact = () => {
-<<<<<<< HEAD
   const [form, setForm] = useState({
     firstName: "", lastName: "", email: "", mobile: "", message: "",
   });
@@ -99,8 +91,6 @@ const Contact = () => {
   const inputClass = (field) =>
     `contact-form-input${errors[field] ? " input-error" : ""}`;
 
-=======
->>>>>>> f3c1bd648b704dcdcddead3150310aec0e1fd731
   return (
     <section className="contact">
 
@@ -108,11 +98,7 @@ const Contact = () => {
       <TopBanner
         title="Contact"
         currentPage="Contact"
-<<<<<<< HEAD
         backgroundImage="/images/kmv-bly9.png"
-=======
-         backgroundImage="/images/kmv-bly9.png"
->>>>>>> f3c1bd648b704dcdcddead3150310aec0e1fd731
       />
 
       <div className="container">
@@ -122,7 +108,6 @@ const Contact = () => {
 
           {/* COL 1 */}
           <div className="contact-box-col contact-border">
-<<<<<<< HEAD
             <div className="contact-icon">
               <FaMapMarkerAlt />
             </div>
@@ -130,27 +115,10 @@ const Contact = () => {
               <h3>Our Address</h3>
               <p>Kanya Mahavidyalaya Arya Samaj, Bhoor, Bareilly, Uttar Pradesh</p>
             </div>
-=======
-
-            <div className="contact-icon">
-              <FaMapMarkerAlt />
-            </div>
-
-            <div>
-              <h3>Our Address</h3>
-
-              <p>
-                Kanya Mahavidyalaya Arya Samaj,
-                Bhoor, Bareilly, Uttar Pradesh
-              </p>
-            </div>
-
->>>>>>> f3c1bd648b704dcdcddead3150310aec0e1fd731
           </div>
 
           {/* COL 2 */}
           <div className="contact-box-col contact-border">
-<<<<<<< HEAD
             <div className="contact-icon">
               <FaPhoneAlt />
             </div>
@@ -158,26 +126,10 @@ const Contact = () => {
               <h3>Phone Number</h3>
               <p>+91 9760502221</p>
             </div>
-=======
-
-            <div className="contact-icon">
-              <FaPhoneAlt />
-            </div>
-
-            <div>
-              <h3>Phone Number</h3>
-
-              <p>
-                +91 9760502221
-              </p>
-            </div>
-
->>>>>>> f3c1bd648b704dcdcddead3150310aec0e1fd731
           </div>
 
           {/* COL 3 */}
           <div className="contact-box-col">
-<<<<<<< HEAD
             <div className="contact-icon">
               <FaEnvelope />
             </div>
@@ -185,21 +137,6 @@ const Contact = () => {
               <h3>Email Address</h3>
               <p>kmvbly@gmail.com</p>
             </div>
-=======
-
-            <div className="contact-icon">
-              <FaEnvelope />
-            </div>
-
-            <div>
-              <h3>Email Address</h3>
-
-              <p>
-                kmvbly@gmail.com
-              </p>
-            </div>
-
->>>>>>> f3c1bd648b704dcdcddead3150310aec0e1fd731
           </div>
 
         </div>
@@ -209,41 +146,24 @@ const Contact = () => {
 
           {/* LEFT IMAGE */}
           <div className="contact-form-left">
-<<<<<<< HEAD
-=======
-
->>>>>>> f3c1bd648b704dcdcddead3150310aec0e1fd731
             <img
               src={require("../assets/aboutt-img.png")}
               alt="contact"
               className="contact-form-image"
             />
-<<<<<<< HEAD
-=======
-
->>>>>>> f3c1bd648b704dcdcddead3150310aec0e1fd731
           </div>
 
           {/* RIGHT FORM */}
           <div className="contact-form-right">
 
-<<<<<<< HEAD
             <h2 className="contact-form-heading">Send Us A Message</h2>
 
             <form className="contact-form" onSubmit={handleSubmit} noValidate>
-=======
-            <h2 className="contact-form-heading">
-              Send Us A Message
-            </h2>
-
-            <form className="contact-form">
->>>>>>> f3c1bd648b704dcdcddead3150310aec0e1fd731
 
               {/* NAME ROW */}
               <div className="contact-form-row">
 
                 <div className="contact-form-group">
-<<<<<<< HEAD
                   <label className="contact-form-label">First Name</label>
                   <input
                     type="text"
@@ -271,33 +191,6 @@ const Contact = () => {
                   {errors.lastName && (
                     <span className="contact-error-msg">{errors.lastName}</span>
                   )}
-=======
-
-                  <label className="contact-form-label">
-                    First Name
-                  </label>
-
-                  <input
-                    type="text"
-                    placeholder="Enter First Name"
-                    className="contact-form-input"
-                  />
-
-                </div>
-
-                <div className="contact-form-group">
-
-                  <label className="contact-form-label">
-                    Last Name
-                  </label>
-
-                  <input
-                    type="text"
-                    placeholder="Enter Last Name"
-                    className="contact-form-input"
-                  />
-
->>>>>>> f3c1bd648b704dcdcddead3150310aec0e1fd731
                 </div>
 
               </div>
@@ -306,7 +199,6 @@ const Contact = () => {
               <div className="contact-form-row">
 
                 <div className="contact-form-group">
-<<<<<<< HEAD
                   <label className="contact-form-label">Email Address</label>
                   <input
                     type="email"
@@ -335,40 +227,12 @@ const Contact = () => {
                   {errors.mobile && (
                     <span className="contact-error-msg">{errors.mobile}</span>
                   )}
-=======
-
-                  <label className="contact-form-label">
-                    Email Address
-                  </label>
-
-                  <input
-                    type="email"
-                    placeholder="Enter Email Address"
-                    className="contact-form-input"
-                  />
-
-                </div>
-
-                <div className="contact-form-group">
-
-                  <label className="contact-form-label">
-                    Mobile Number
-                  </label>
-
-                  <input
-                    type="number"
-                    placeholder="Enter Mobile Number"
-                    className="contact-form-input"
-                  />
-
->>>>>>> f3c1bd648b704dcdcddead3150310aec0e1fd731
                 </div>
 
               </div>
 
               {/* MESSAGE */}
               <div className="contact-form-group">
-<<<<<<< HEAD
                 <label className="contact-form-label">Message</label>
                 <textarea
                   name="message"
@@ -383,24 +247,6 @@ const Contact = () => {
               </div>
 
               <button type="submit" className="contact-form-btn">
-=======
-
-                <label className="contact-form-label">
-                  Message
-                </label>
-
-                <textarea
-                  placeholder="Write Your Message Here"
-                  className="contact-form-textarea"
-                ></textarea>
-
-              </div>
-
-              <button
-                type="submit"
-                className="contact-form-btn"
-              >
->>>>>>> f3c1bd648b704dcdcddead3150310aec0e1fd731
                 Send Message
               </button>
 
@@ -412,10 +258,6 @@ const Contact = () => {
 
         {/* MAP */}
         <div className="contact-map">
-<<<<<<< HEAD
-=======
-
->>>>>>> f3c1bd648b704dcdcddead3150310aec0e1fd731
           <iframe
             title="Google Map"
             className="contact-map-frame"
@@ -424,10 +266,6 @@ const Contact = () => {
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
-<<<<<<< HEAD
-=======
-
->>>>>>> f3c1bd648b704dcdcddead3150310aec0e1fd731
         </div>
 
       </div>
