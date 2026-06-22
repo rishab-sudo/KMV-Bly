@@ -1,0 +1,399 @@
+/* =========================
+   TOP HEADER
+========================= */
+
+.navbar-header {
+  width: 100%;
+  padding: 8px 0;
+  background: #4B0A0A;
+  border-bottom: 1px solid #ffffff20;
+}
+
+.navbar-container {
+  max-width: 1320px;
+}
+
+.navbar-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* =========================
+   LEFT SIDE
+========================= */
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.navbar-logo {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+}
+
+.navbar-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-college-name {
+  font-size: 34px;
+  font-weight: 700;
+  margin: 0;
+  color: #fff;
+  line-height: 1.2;
+}
+
+.navbar-tagline {
+  margin: 6px 0 0;
+  font-size: 15px;
+  color: #F3D79B;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+/* =========================
+   RIGHT SIDE
+========================= */
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.navbar-contact-box {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.navbar-contact-icon {
+  width: 36px;
+  height: 35px;
+  border-radius: 50%;
+  background: #F3D79B;
+  color: #4B0A0A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.navbar-contact-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-contact-title {
+  color: #F3D79B;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.navbar-contact-text {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* =========================
+   HAMBURGER
+========================= */
+
+.navbar-hamburger {
+  display: none;
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* =========================
+   NAVBAR MENU
+========================= */
+
+.navbar-menu-wrapper {
+  width: 100%;
+  background: #F3D79B;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.navbar-menu-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* background-color: aqua; */
+  width: 80%;
+}
+
+.navbar-menu li {
+  position: relative;
+}
+
+.navbar-menu li a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 20px 18px;
+  text-decoration: none;
+  color: #4B0A0A;
+  font-weight: 700;
+  transition: 0.3s;
+  font-size: 15px;
+}
+
+.navbar-menu li a:hover {
+  background: #4B0A0A;
+  color: #fff;
+}
+
+/* =========================
+   APPLY BUTTON
+========================= */
+
+.navbar-apply-btn-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-apply-btn {
+  background: #4B0A0A;
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 25px;
+  border-radius: 50px;
+  font-weight: 700;
+  transition: 0.3s;
+  border: 2px solid #4B0A0A;
+}
+
+.navbar-apply-btn:hover {
+  background: transparent;
+  color: #4B0A0A;
+}
+
+/* =========================
+   DROPDOWN
+========================= */
+
+.navbar-dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  min-width: 240px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  z-index: 999;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.navbar-dropdown-menu a {
+  display: block;
+  padding: 14px 18px;
+  color: #4B0A0A !important;
+  border-bottom: 1px solid #eee;
+  background: #fff !important;
+}
+
+.navbar-dropdown-menu a:hover {
+  background: #4B0A0A !important;
+  color: #fff !important;
+}
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.navbar-sidebar {
+  position: fixed;
+  top: 0;
+  right: -320px;
+  width: 300px;
+  height: 100vh;
+  background: #fff;
+  z-index: 9999;
+  transition: 0.4s ease;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.navbar-sidebar.active {
+  right: 0;
+}
+
+.navbar-sidebar-top {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar-close {
+  font-size: 28px;
+  cursor: pointer;
+  color: #4B0A0A;
+}
+
+.navbar-sidebar-links {
+  list-style: none;
+  padding: 0;
+  margin-top: 30px;
+}
+
+.navbar-sidebar-links li {
+  margin-bottom: 10px;
+}
+
+.navbar-sidebar-links a,
+.mobile-dropdown summary {
+  text-decoration: none;
+  color: #4B0A0A;
+  font-size: 18px;
+  font-weight: 600;
+  display: block;
+  padding: 12px 0;
+  cursor: pointer;
+}
+
+.mobile-submenu {
+  padding-left: 15px;
+}
+
+.mobile-submenu a {
+  font-size: 16px;
+  padding: 8px 0;
+}
+
+.mobile-apply-btn {
+  background: #4B0A0A;
+  color: #fff !important;
+  text-align: center;
+  border-radius: 8px;
+  margin-top: 15px;
+  padding: 14px !important;
+}
+
+/* =========================
+   OVERLAY
+========================= */
+
+.navbar-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0,0,0,0.5);
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 992px) {
+
+  .navbar-menu-wrapper {
+    display: none;
+  }
+
+  .navbar-hamburger {
+    display: block;
+  }
+
+  .navbar-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+  }
+
+  .navbar-right {
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+.navbar-contact-box {
+display: none;
+}
+
+  .navbar-logo {
+    width: 70px;
+    height: 70px;
+  }
+
+  .navbar-college-name {
+    font-size: 24px;
+  }
+
+  .navbar-tagline {
+    font-size: 13px;
+  }
+
+  .navbar-contact-box {
+    gap: 10px;
+  }
+
+  .navbar-contact-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 15px;
+  }
+
+  .navbar-contact-title {
+    font-size: 12px;
+  }
+
+  .navbar-contact-text {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .navbar-wrapper {
+    gap: 15px;
+  }
+
+  .navbar-left {
+    width: 100%;
+    gap: 12px;
+  }
+
+  .navbar-right {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .navbar-college-name {
+    font-size: 20px;
+  }
+
+  .navbar-tagline {
+    font-size: 12px;
+  }
+
+  .navbar-hamburger {
+    position: absolute;
+    top: 28px;
+    right: 20px;
+    font-size: 24px;
+  }
+}

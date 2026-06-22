@@ -1,0 +1,79 @@
+.notice {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: #4B0A0A;
+  border: 1px solid #ddd;
+}
+
+/* LEFT SIDE */
+.notice-label {
+  width: 220px;
+  height: 100%;
+  background: #F3D79B;
+  color: #4B0A0A;
+  font-size: 24px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 1px;
+  flex-shrink: 0;
+
+  /* MOTION EFFECT */
+  clip-path: polygon(0 0, 85% 0, 100% 50%, 85% 100%, 0 100%);
+}
+
+/* RIGHT SIDE */
+.notice-marquee {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+  background: #4B0A0A;
+
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+/* MOVING TEXT */
+.notice-track {
+  white-space: nowrap;
+  display: inline-block;
+  padding-left: 100%;
+  animation: noticeMove 18s linear infinite;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+}
+
+/* ANIMATION */
+@keyframes noticeMove {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+  .notice {
+    height: 50px;
+  }
+
+  .notice-label {
+    width: 150px;
+    font-size: 18px;
+  }
+
+  .notice-track {
+    font-size: 14px;
+  }
+}
+

@@ -1,0 +1,493 @@
+import React, { useMemo, useState } from "react";
+import {
+  FaSearch,
+  FaChevronLeft,
+  FaChevronRight,
+} from "react-icons/fa";
+
+import TopBanner from "../components/TopBanner";
+import "./Faculty.css";
+
+const facultyData = [
+  // =========================
+  // हिन्दी विभाग
+  // =========================
+  {
+    id: 1,
+    page: 1,
+    subject: "हिन्दी",
+    subjectEnglish: "hindi",
+    name: "डॉ० सविता उपाध्याय",
+    qualification: "एम० ए० हिन्दी, पीएच० डी०",
+    designation: "एसो० प्रो० एवं प्रभारी",
+    image: require("../assets/kmv-logo.png"),
+    email: "savita@kmvcollege.edu.in",
+  },
+  {
+    id: 2,
+    page: 1,
+    subject: "हिन्दी",
+    subjectEnglish: "hindi",
+    name: "डॉ० रेनू उपाध्याय",
+    qualification: "एम० ए० हिन्दी, समाजशास्त्र, पीएच० डी०",
+    designation: "एसो० प्रो०",
+    image: require("../assets/kmv-logo.png"),
+    email: "renu@kmvcollege.edu.in",
+  },
+  {
+    id: 3,
+    page: 1,
+    subject: "हिन्दी",
+    subjectEnglish: "hindi",
+    name: "डॉ० अनीता वर्मा",
+    qualification: "एम० ए० हिन्दी, नेट",
+    designation: "असिस्टेंट प्रोफेसर",
+    image: require("../assets/kmv-logo.png"),
+    email: "anita@kmvcollege.edu.in",
+  },
+  {
+    id: 4,
+    page: 1,
+    subject: "हिन्दी",
+    subjectEnglish: "hindi",
+    name: "डॉ० पूर्णिमा पाण्डेय",
+    qualification: "एम० ए० हिन्दी, नेट",
+    designation: "असिस्टेंट प्रोफेसर",
+    image: require("../assets/kmv-logo.png"),
+    email: "poornima@kmvcollege.edu.in",
+  },
+
+  // =========================
+  // राजनीति शास्त्र विभाग
+  // =========================
+  {
+    id: 5,
+    page: 2,
+    subject: "राजनीति शास्त्र",
+    subjectEnglish: "political science",
+    name: "डॉ० कुमुद प्रभाकर",
+    qualification: "एम० ए० राजनीति शास्त्र, नेट, पीएच० डी०",
+    designation: "एसो० प्रो०",
+    image: require("../assets/kmv-logo.png"),
+    email: "kumud@kmvcollege.edu.in",
+  },
+  {
+    id: 6,
+    page: 2,
+    subject: "राजनीति शास्त्र",
+    subjectEnglish: "political science",
+    name: "श्रीमती निधि सोनकर",
+    qualification: "एम० ए० राजनीति शास्त्र, नेट",
+    designation: "असिस्टेंट प्रोफेसर",
+    image: require("../assets/kmv-logo.png"),
+    email: "nidhi@kmvcollege.edu.in",
+  },
+
+  // =========================
+  // समाजशास्त्र विभाग
+  // =========================
+  {
+    id: 7,
+    page: 3,
+    subject: "समाजशास्त्र",
+    subjectEnglish: "sociology",
+    name: "डॉ० सुषमा चौरसिया",
+    qualification: "एम० ए० समाजशास्त्र, नेट, पीएच० डी०",
+    designation: "एसो० प्रो०",
+    image: require("../assets/kmv-logo.png"),
+    email: "sushma@kmvcollege.edu.in",
+  },
+  {
+    id: 8,
+    page: 3,
+    subject: "समाजशास्त्र",
+    subjectEnglish: "sociology",
+    name: "डॉ० रीता मौर्या",
+    qualification: "एम० ए० समाजशास्त्र, एम०फिल०, पीएच० डी०",
+    designation: "असिस्टेंट प्रोफेसर",
+    image: require("../assets/kmv-logo.png"),
+    email: "rita@kmvcollege.edu.in",
+  },
+
+  // =========================
+  // अर्थशास्त्र विभाग
+  // =========================
+  {
+    id: 9,
+    page: 4,
+    subject: "अर्थशास्त्र",
+    subjectEnglish: "economics",
+    name: "डॉ० अनीता भारद्वाज",
+    qualification: "एम० ए० अर्थशास्त्र, पीएच० डी०",
+    designation: "असिस्टेंट प्रोफेसर",
+    image: require("../assets/kmv-logo.png"),
+    email: "anita.b@kmvcollege.edu.in",
+  },
+  {
+    id: 10,
+    page: 4,
+    subject: "अर्थशास्त्र",
+    subjectEnglish: "economics",
+    name: "डॉ० स्वाति आनन्द",
+    qualification: "एम० ए० अर्थशास्त्र, नेट",
+    designation: "असिस्टेंट प्रोफेसर",
+    image: require("../assets/kmv-logo.png"),
+    email: "swati@kmvcollege.edu.in",
+  },
+
+  // =========================
+  // गृहविज्ञान विभाग
+  // =========================
+  {
+    id: 11,
+    page: 5,
+    subject: "गृहविज्ञान",
+    subjectEnglish: "home science",
+    name: "डॉ० परिधि सक्सेना",
+    qualification: "एम० ए० गृहविज्ञान, पीएच० डी०",
+    designation: "असिस्टेंट प्रोफेसर",
+    image: require("../assets/kmv-logo.png"),
+    email: "paridhi@kmvcollege.edu.in",
+  },
+
+  // =========================
+  // शिक्षाशास्त्र विभाग
+  // =========================
+  {
+    id: 12,
+    page: 5,
+    subject: "शिक्षाशास्त्र",
+    subjectEnglish: "education",
+    name: "डॉ० शुचि श्रीवास्तव",
+    qualification: "एम० ए० शिक्षाशास्त्र, पीएच० डी०",
+    designation: "असिस्टेंट प्रोफेसर",
+    image: require("../assets/kmv-logo.png"),
+    email: "shuchi@kmvcollege.edu.in",
+  },
+
+  // =========================
+  // अंग्रेजी विभाग
+  // =========================
+  {
+    id: 13,
+    page: 6,
+    subject: "अंग्रेजी",
+    subjectEnglish: "english",
+    name: "डॉ० श्यामली सोना",
+    qualification: "एम० ए० अंग्रेजी, नेट",
+    designation: "असिस्टेंट प्रोफेसर",
+    image: require("../assets/kmv-logo.png"),
+    email: "shyamali@kmvcollege.edu.in",
+  },
+  {
+    id: 14,
+    page: 6,
+    subject: "अंग्रेजी",
+    subjectEnglish: "english",
+    name: "डॉ० जयश्रीबाला पाण्डेय",
+    qualification: "एम० ए० अंग्रेजी, नेट",
+    designation: "असिस्टेंट प्रोफेसर",
+    image: require("../assets/kmv-logo.png"),
+    email: "jayshreebala@kmvcollege.edu.in",
+  },
+
+  // =========================
+  // चित्रकला एवं रेखांकन विभाग
+  // =========================
+  {
+    id: 15,
+    page: 7,
+    subject: "चित्रकला एवं रेखांकन",
+    subjectEnglish: "drawing and painting",
+    name: "डॉ० अनुराधा आर्या",
+    qualification: "एम० ए० चित्रकला, नेट",
+    designation: "अˈसोसिअट्‌ प्रोफेसर",
+    image: require("../assets/kmv-logo.png"),
+    email: "anuradha@kmvcollege.edu.in",
+  },
+  {
+    id: 16,
+    page: 7,
+    subject: "चित्रकला एवं रेखांकन",
+    subjectEnglish: "drawing and painting",
+    name: "डॉ० मुक्तामणि मिश्रा",
+    qualification: "एम० ए० चित्रकला, नेट",
+    designation: "अˈसोसिअट्‌ प्रोफेसर",
+    image: require("../assets/kmv-logo.png"),
+    email: "muktamani@kmvcollege.edu.in",
+  },
+  {
+    id: 17,
+    page: 7,
+    subject: "चित्रकला एवं रेखांकन",
+    subjectEnglish: "drawing and painting",
+    name: "डॉ० सीमा मेहरा",
+    qualification: "एम० ए० चित्रकला, नेट",
+    designation: "असिस्टेंट प्रोफेसर",
+    image: require("../assets/kmv-logo.png"),
+    email: "seema@kmvcollege.edu.in",
+  },
+  {
+    id: 18,
+    page: 7,
+    subject: "चित्रकला एवं रेखांकन",
+    subjectEnglish: "drawing and painting",
+    name: "डॉ० अर्चना सक्सेना",
+    qualification: "एम० ए० चित्रकला, नेट",
+    designation: "असिस्टेंट प्रोफेसर",
+    image: require("../assets/kmv-logo.png"),
+    email: "archna@kmvcollege.edu.in",
+  },
+];
+
+
+
+const subjects = [
+  {
+    id: 1,
+    label: "हिन्दी",
+    page: 1,
+  },
+  {
+    id: 2,
+    label: "राजनीति शास्त्र",
+    page: 2,
+  },
+  {
+    id: 3,
+    label: "समाजशास्त्र",
+    page: 3,
+  },
+  {
+    id: 4,
+    label: "अर्थशास्त्र",
+    page: 4,
+  },
+  {
+    id: 5,
+    label: "गृहविज्ञान",
+    page: 5,
+  },
+  {
+    id: 6,
+    label: "शिक्षाशास्त्र",
+    page: 5,
+  },
+  {
+    id: 7,
+    label: "अंग्रेजी",
+    page: 6,
+  },
+  {
+    id: 8,
+    label: "चित्रकला एवं रेखांकन",
+    page: 7,
+  },
+];
+
+const Faculty = () => {
+  const [searchTerm, setSearchTerm] = useState("");
+  const [currentPage, setCurrentPage] = useState(1);
+
+  const filteredFaculty = useMemo(() => {
+    const search = searchTerm.toLowerCase();
+
+    return facultyData.filter((item) => {
+      const matchPage = item.page === currentPage;
+
+      const matchSearch =
+        item.subject.toLowerCase().includes(search) ||
+        item.subjectEnglish.toLowerCase().includes(search);
+
+      if (searchTerm === "") {
+        return matchPage;
+      }
+
+      return matchSearch;
+    });
+  }, [searchTerm, currentPage]);
+
+  const handlePageChange = (page) => {
+    setCurrentPage(page);
+  };
+
+  return (
+    <section className="faculty-page">
+      <TopBanner
+        title="Faculty"
+        currentPage="Faculty"
+         backgroundImage="/images/kmv-bly9.png"
+      />
+
+      <section className="faculty-main-section">
+        <div className="container">
+          <div className="faculty-main-wrapper">
+            {/* SIDEBAR */}
+
+            <aside className="faculty-sidebar">
+              <div className="faculty-sidebar-box">
+                <h3 className="faculty-sidebar-heading">
+                  शिक्षक खोजें
+                </h3>
+
+                {/* SEARCH */}
+
+                <div className="faculty-search-box">
+                  <FaSearch className="faculty-search-icon" />
+
+                  <input
+                    type="text"
+                    placeholder="विषय खोजें..."
+                    value={searchTerm}
+                    onChange={(e) =>
+                      setSearchTerm(e.target.value)
+                    }
+                  />
+                </div>
+
+                {/* FILTER */}
+
+                <div className="faculty-filter-wrapper">
+                  <h4 className="faculty-filter-title">
+                    विषय
+                  </h4>
+
+                  <div className="faculty-filter-list">
+                    {subjects.map((item) => (
+                      <button
+                        key={item.id}
+                        className={`faculty-filter-btn ${
+                          currentPage === item.page
+                            ? "active"
+                            : ""
+                        }`}
+                        onClick={() =>
+                          handlePageChange(item.page)
+                        }
+                      >
+                        {item.label}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              {/* HELP */}
+
+              <div className="faculty-help-box">
+                <h3>संपर्क सहायता</h3>
+
+                <p>
+                  विषय एवं शिक्षकों से संबंधित जानकारी
+                  प्राप्त करें।
+                </p>
+
+                <button>संपर्क करें</button>
+              </div>
+            </aside>
+
+            {/* RIGHT */}
+
+            <div className="faculty-right-area">
+              <div className="faculty-right-top">
+                <h2>फैकल्टी सदस्य</h2>
+
+                <span>
+                  {filteredFaculty.length} शिक्षक उपलब्ध
+                </span>
+              </div>
+
+              {/* SCROLL AREA */}
+
+              <div className="faculty-scroll-area">
+                <div className="faculty-grid">
+                  {filteredFaculty.map((faculty) => (
+                    <div
+                      className="faculty-card"
+                      key={faculty.id}
+                    >
+                      <div className="faculty-card-image">
+                        <img
+                          src={faculty.image}
+                          alt={faculty.name}
+                        />
+                      </div>
+
+                      <div className="faculty-card-content">
+                        <span className="faculty-subject-badge">
+                          {faculty.subject}
+                        </span>
+
+                        <h3 className="faculty-card-name">
+                          {faculty.name}
+                        </h3>
+
+                        <h4 className="faculty-card-role">
+                          {faculty.designation}
+                        </h4>
+
+                        <p className="faculty-card-qualification">
+                          {faculty.qualification}
+                        </p>
+
+                        {/* <div className="faculty-card-email">
+                          <FaEnvelope />
+
+                          <span>{faculty.email}</span>
+                        </div> */}
+
+                        {/* <button className="faculty-profile-btn">
+                          VIEW PROFILE
+                        </button> */}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* PAGINATION */}
+
+              <div className="faculty-pagination">
+                <button
+                  onClick={() =>
+                    currentPage > 1 &&
+                    setCurrentPage(currentPage - 1)
+                  }
+                >
+                  <FaChevronLeft />
+                </button>
+
+             {[1, 2, 3, 4, 5, 6, 7].map((page) => (
+                  <button
+                    key={page}
+                    className={
+                      currentPage === page
+                        ? "active"
+                        : ""
+                    }
+                    onClick={() =>
+                      setCurrentPage(page)
+                    }
+                  >
+                    {page}
+                  </button>
+                ))}
+
+                <button
+                  onClick={() =>
+                    currentPage < 7 &&
+                    setCurrentPage(currentPage + 1)
+                  }
+                >
+                  <FaChevronRight />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  );
+};
+
+export default Faculty;
