@@ -328,12 +328,9 @@
 }
 
 @media (max-width: 768px) {
-<<<<<<< HEAD
 .navbar-contact-box {
 display: none;
 }
-=======
->>>>>>> f3c1bd648b704dcdcddead3150310aec0e1fd731
 
   .navbar-logo {
     width: 70px;

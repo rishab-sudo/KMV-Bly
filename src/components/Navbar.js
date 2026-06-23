@@ -48,7 +48,7 @@ const [admissionDropdownOpen, setAdmissionDropdownOpen] =
                 </h2>
 
                 <p className="navbar-tagline">
-                  ज्ञान • संस्कार • सफलता
+                 आचारः परमो धर्मः
                 </p>
 
               </div>
@@ -228,17 +228,7 @@ const [admissionDropdownOpen, setAdmissionDropdownOpen] =
         onClose={() => setIsModalOpen(false)}
       />
 
-            <div className="navbar-apply-btn-wrapper">
-
-              <a
-                href="/apply-now"
-                className="navbar-apply-btn"
-              >
-                Apply Now
-              </a>
-
-            </div>
-
+   
 
           </div>
 
