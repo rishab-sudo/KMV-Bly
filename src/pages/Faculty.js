@@ -108,12 +108,24 @@ const facultyData = [
     image: require("../assets/kmv-logo.png"),
     email: "rita@kmvcollege.edu.in",
   },
+  // ✅ NEW ENTRY
+  {
+    id: 9,
+    page: 3,
+    subject: "समाजशास्त्र",
+    subjectEnglish: "sociology",
+    name: "डॉ० विनीता सिंह",
+    qualification: "एम० ए० समाजशास्त्र",
+    designation: "असिस्टेंट प्रोफेसर",
+    image: require("../assets/kmv-logo.png"),
+    email: "vinita@kmvcollege.edu.in",
+  },
 
   // =========================
   // अर्थशास्त्र विभाग
   // =========================
   {
-    id: 9,
+    id: 10,
     page: 4,
     subject: "अर्थशास्त्र",
     subjectEnglish: "economics",
@@ -124,7 +136,7 @@ const facultyData = [
     email: "anita.b@kmvcollege.edu.in",
   },
   {
-    id: 10,
+    id: 11,
     page: 4,
     subject: "अर्थशास्त्र",
     subjectEnglish: "economics",
@@ -139,7 +151,7 @@ const facultyData = [
   // गृहविज्ञान विभाग
   // =========================
   {
-    id: 11,
+    id: 12,
     page: 5,
     subject: "गृहविज्ञान",
     subjectEnglish: "home science",
@@ -154,7 +166,7 @@ const facultyData = [
   // शिक्षाशास्त्र विभाग
   // =========================
   {
-    id: 12,
+    id: 13,
     page: 5,
     subject: "शिक्षाशास्त्र",
     subjectEnglish: "education",
@@ -169,7 +181,7 @@ const facultyData = [
   // अंग्रेजी विभाग
   // =========================
   {
-    id: 13,
+    id: 14,
     page: 6,
     subject: "अंग्रेजी",
     subjectEnglish: "english",
@@ -180,7 +192,7 @@ const facultyData = [
     email: "shyamali@kmvcollege.edu.in",
   },
   {
-    id: 14,
+    id: 15,
     page: 6,
     subject: "अंग्रेजी",
     subjectEnglish: "english",
@@ -195,29 +207,29 @@ const facultyData = [
   // चित्रकला एवं रेखांकन विभाग
   // =========================
   {
-    id: 15,
+    id: 16,
     page: 7,
     subject: "चित्रकला एवं रेखांकन",
     subjectEnglish: "drawing and painting",
     name: "डॉ० अनुराधा आर्या",
     qualification: "एम० ए० चित्रकला, नेट",
-    designation: "अˈसोसिअट्‌ प्रोफेसर",
+    designation: "एसो० प्रो०",  // ✅ UPDATED
     image: require("../assets/kmv-logo.png"),
     email: "anuradha@kmvcollege.edu.in",
   },
   {
-    id: 16,
+    id: 17,
     page: 7,
     subject: "चित्रकला एवं रेखांकन",
     subjectEnglish: "drawing and painting",
     name: "डॉ० मुक्तामणि मिश्रा",
-    qualification: "एम० ए० चित्रकला, नेट",
-    designation: "अˈसोसिअट्‌ प्रोफेसर",
+    qualification: "एम० एफ० ए०, नेट",  // ✅ UPDATED: M.F.A.
+    designation: "एसो० प्रो०",  // ✅ UPDATED
     image: require("../assets/kmv-logo.png"),
     email: "muktamani@kmvcollege.edu.in",
   },
   {
-    id: 17,
+    id: 18,
     page: 7,
     subject: "चित्रकला एवं रेखांकन",
     subjectEnglish: "drawing and painting",
@@ -228,7 +240,7 @@ const facultyData = [
     email: "seema@kmvcollege.edu.in",
   },
   {
-    id: 18,
+    id: 19,
     page: 7,
     subject: "चित्रकला एवं रेखांकन",
     subjectEnglish: "drawing and painting",
